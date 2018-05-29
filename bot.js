@@ -7,12 +7,6 @@ sql.open("./score.sqlite");
 const help =
     '\n__***Commands list:***__' +
     '\n' +
-    '\n!addrole role' +
-    '\n    fire, water, wind, earth, dark, light' +
-    '\n    other roles incoming' +
-    '\n!removerole role' +
-    '\n    fire, water, wind, earth, dark, light' +
-    '\n    other roles incoming' +
     '\n!choose choice1 or choice2' +
     '\n!ranking' +
     '\n!mylevel' +
@@ -46,71 +40,7 @@ bot.on('message', message => {
     if (str === '!help') {
         message.channel.send(help);
     }
-
-    //If it's to add roles
-    else if (str === '!addrole fire') {
-        var role = message.guild.roles.find(role => role.name === "Fire");
-        message.member.addRole(role);
-        message.channel.send("Fire role was added.");
-    }
-    else if (str === '!addrole water') {
-        role = message.guild.roles.find(role => role.name === "Water");
-        message.member.addRole(role);
-        message.channel.send("Water role was added.");
-    }
-    else if (str === '!addrole earth') {
-        role = message.guild.roles.find(role => role.name === "Earth");
-        message.member.addRole(role);
-        message.channel.send("Earth role was added.");
-    }
-    else if (str === '!addrole wind') {
-        role = message.guild.roles.find(role => role.name === "Wind");
-        message.member.addRole(role);
-        message.channel.send("Wind role was added.");
-    }
-    else if (str === '!addrole dark') {
-        role = message.guild.roles.find(role => role.name === "Dark");
-        message.member.addRole(role);
-        message.channel.send("Dark role was added.");
-    }
-    else if (str === '!addrole light') {
-        role = message.guild.roles.find(role => role.name === "Light");
-        message.member.addRole(role);
-        message.channel.send("Light role was added.");
-    }
-
-    //If it's to remove roles
-    else if (str === '!removerole fire') {
-        var role2 = message.guild.roles.find(role2 => role2.name === "Fire");
-        message.member.removeRole(role2);
-        message.channel.send("Fire role was removed.");
-    }
-    else if (str === '!removerole water') {
-        role2 = message.guild.roles.find(role2 => role2.name === "Water");
-        message.member.removeRole(role2);
-        message.channel.send("Water role was removed.");
-    }
-    else if (str === '!removerole earth') {
-        role2 = message.guild.roles.find(role2 => role2.name === "Earth");
-        message.member.removeRole(role2);
-        message.channel.send("Earth role was removed.");
-    }
-    else if (str === '!removerole wind') {
-        role2 = message.guild.roles.find(role2 => role2.name === "Wind");
-        message.member.removeRole(role2);
-        message.channel.send("Wind role was removed.");
-    }
-    else if (str === '!removerole dark') {
-        role2 = message.guild.roles.find(role2 => role2.name === "Dark");
-        message.member.removeRole(role2);
-        message.channel.send("Dark role was removed.");
-    }
-    else if (str === '!removerole light') {
-        role2 = message.guild.roles.find(role2 => role2.name === "Light");
-        message.member.removeRole(role2);
-        message.channel.send("Light role was removed.");
-    }
-
+    
     //If it's to make a choice
     else if (str.includes("!choose")) {
         let number = Math.floor(Math.random() * 5);
