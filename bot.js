@@ -4,6 +4,7 @@ const sql = require("sqlite");
 sql.open("./score.sqlite");
 
 // VARIABLES
+let token = "NDUwNjgyODI1Mjg5NzYwNzc4.De3VDg.kzn4SlXOK56Ae6-unchWHTm4h5s";
 const help =
     '\n__***Commands list:***__' +
     '\n' +
@@ -49,7 +50,7 @@ bot.on('message', message => {
 
     //If it's to add roles
     else if (str === '!addrole fire') {
-        let role = message.guild.roles.find(role => role.name === "Fire");
+        var role = message.guild.roles.find(role => role.name === "Fire");
         message.member.addRole(role);
         message.channel.send("Fire role was added.");
     }
@@ -113,19 +114,19 @@ bot.on('message', message => {
 
     //If it's to make a choice
     else if (str.includes("!choose")) {
-        let number = Math.floor(Math.random() * 50);
+        let number = Math.floor(Math.random() * 5);
         let temp = message.content;
 
         if(!str.includes("or"))
         {
             message.channel.send("Use 'or' between the two elements.");
         }
-        else if(number%3 ===  0)
+        else if(number%2 ===  0)
         {
             temp = temp.substring(8, str.indexOf("or"));
             message.channel.send("You better choose : " + temp);
         }
-        else if(number%3 === 1)
+        else if(number%2 === 1)
         {
             temp = temp.substring(str.indexOf("or")+3, );
             message.channel.send("You better choose : " + temp);
@@ -167,23 +168,23 @@ bot.on('message', message => {
 
     if (message.content.startsWith("!ranking")) {
 
-        sql.get(`SELECT * FROM scores ORDER BY points ASC LIMIT 0, 1`).then(result => {
+        sql.get(`SELECT * FROM scores ORDER BY points DESC LIMIT 0, 1`).then(result => {
             if (!result) return message.channel.send("1 none");
             message.channel.send(`Ranking:\n1 ${result.username}`);
 
-            sql.get(`SELECT * FROM scores ORDER BY points ASC LIMIT 1, 1`).then(result2 => {
+            sql.get(`SELECT * FROM scores ORDER BY points DESC LIMIT 1, 1`).then(result2 => {
                 if (!result2) return message.channel.send("2 none");
                 message.channel.send(`\n2 ${result2.username}`);
 
-                sql.get(`SELECT * FROM scores ORDER BY points ASC LIMIT 2, 1`).then(result3 => {
+                sql.get(`SELECT * FROM scores ORDER BY points DESC LIMIT 2, 1`).then(result3 => {
                     if (!result3) return message.channel.send("3 none");
                     message.channel.send(`\n3 ${result3.username}`);
 
-                    sql.get(`SELECT * FROM scores ORDER BY points ASC LIMIT 3, 1`).then(result4 => {
+                    sql.get(`SELECT * FROM scores ORDER BY points DESC LIMIT 3, 1`).then(result4 => {
                         if (!result4) return message.channel.send("4 none");
                         message.channel.send(`\n4 ${result4.username}`);
 
-                        sql.get(`SELECT * FROM scores ORDER BY points ASC LIMIT 4, 1`).then(result5 => {
+                        sql.get(`SELECT * FROM scores ORDER BY points DESC LIMIT 4, 1`).then(result5 => {
                             if (!result5) return message.channel.send("5 none");
                             message.channel.send(`\n5 ${result5.username}`);
                         });
@@ -195,4 +196,4 @@ bot.on('message', message => {
 
 });
 
-bot.login(process.env.BOT_TOKEN);
+bot.login(token);
