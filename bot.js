@@ -4,7 +4,6 @@ const sql = require("sqlite");
 sql.open("./score.sqlite");
 
 // VARIABLES
-let token = "NDUwNjgyODI1Mjg5NzYwNzc4.De3VDg.kzn4SlXOK56Ae6-unchWHTm4h5s";
 const help =
     '\n__***Commands list:***__' +
     '\n' +
@@ -196,4 +195,4 @@ bot.on('message', message => {
 
 });
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
