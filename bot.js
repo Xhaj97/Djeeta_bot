@@ -9,6 +9,7 @@ sql.open("./score.sqlite");
 const help =
     '\n__***Commands list:***__' +
     '\n' +
+    '\nAsk Djeeta yes no question: add Djeeta + ? in your sentence' +
     '\n!choose choice1 or choice2' +
     '\n!ranking' +
     '\n!mylevel' +
@@ -42,6 +43,68 @@ bot.on('message', message => {
     // if it's help
     if (str === '!help') {
         message.channel.send(help);
+    }
+    
+    //Djeeta answers you
+    else if(str.includes("Djeeta") === true && str.includes("?") === true)
+    {
+        let number = Math.floor(Math.random() * 8);
+        if (number === 0)
+        {
+            message.channel.send("I think you are right.");
+        }
+        else if(number === 1)
+        {
+            message.channel.send("No you're wrong...");
+        }
+        else if(number === 2)
+        {
+            message.channel.send("Hum, sorry i don't know the answer.");
+        }
+        else if(number === 3)
+        {
+            message.channel.send("Yes yes yes :)");
+        }
+        else if(number === 4)
+        {
+            message.channel.send("Oh not really.");
+        }
+        else if(number === 5)
+        {
+            message.channel.send("All the things you're spouting doesn't seems right...sorry !");
+        }
+        else if(number === 6)
+        {
+            message.channel.send("Phalanx ! Hum oh sorry, what did you say ?");
+        }
+        else if(number === 7)
+        {
+            message.channel.send("Please no more questions i'm trying to play GBF ! ");
+        }
+        else if(number === 8)
+        {
+            message.channel.send("I'm busy ! Talk to you later !");
+        }
+    }
+    else if(str.includes("Djeeta") === true && str.includes("!") === true)
+    {
+        let number = Math.floor(Math.random() * 4);
+        if (number === 0)
+        {
+            message.channel.send("Hum ?");
+        }
+        else if(number === 1)
+        {
+            message.channel.send("Not now i'm trying to play gbf...");
+        }
+        else if(number === 2)
+        {
+            message.channel.send("Did you just call me ?");
+        }
+        else if(number === 3)
+        {
+            message.channel.send("Hi, what's up ?");
+        }
     }
 
     //If it's to make a choice
