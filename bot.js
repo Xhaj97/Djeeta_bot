@@ -46,7 +46,7 @@ bot.on('message', message => {
     }
     
     //Djeeta answers you
-    else if(str.includes("I love you"))
+    else if(str.includes("i love you"))
     {
         let number = Math.floor(Math.random() * 5);
         if(number ===  0)
