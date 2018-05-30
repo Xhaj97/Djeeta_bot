@@ -1,11 +1,9 @@
+
+// VARIABLES
 const Discord =  require('discord.js');
 const bot = new Discord.Client();
 const sql = require("sqlite");
 sql.open("./score.sqlite");
-
-//giving permission
-let perms = message.member.permissions;
-
 
 // VARIABLES
 const help =
@@ -44,36 +42,7 @@ bot.on('message', message => {
     if (str === '!help') {
         message.channel.send(help);
     }
-    
-    else if(str.includes("!addrole water")) {
-        // get role by ID
-        let myRole = message.guild.roles.get("2256273237447671820");
-        
-        //See if member has the role
-        if(message.member.roles.has('2256273237447671820')) {
-          message.channel.send(You already have water role.");
-        } 
-        else {
-            message.member.addRole('193654001089118208')
-            .then(message.channel.send("Water role was added."));
-            .catch(message.channel.send(console.error));
-        }
-    }
-    else if(str.includes("!removerole water")) {
-        // get role by ID
-        let myRole = message.guild.roles.get("2256273237447671820");
-        
-        //See if member hasn't the role
-        if(!message.member.roles.has('2256273237447671820')) {
-          message.channel.send(You don't have water role.");
-        } 
-        else {
-            message.member.removeRole('193654001089118208')
-            .then(message.channel.send("Water role was removed."));
-            .catch(message.channel.send(console.error));
-        }
-    }
-    
+
     //If it's to make a choice
     else if (str.includes("!choose")) {
         let number = Math.floor(Math.random() * 5);
