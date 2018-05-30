@@ -41,7 +41,7 @@ bot.on('message', message => {
     let str = message.content;
 
     // if it's help
-    if (str === '!help') {
+    if (str === '!helpme') {
         message.channel.send(help);
     }
     
