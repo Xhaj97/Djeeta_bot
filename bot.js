@@ -46,6 +46,26 @@ bot.on('message', message => {
     }
     
     //Djeeta answers you
+    else if(str.includes("I love you"))
+    {
+        let number = Math.floor(Math.random() * 5);
+        if(number ===  0)
+        {
+            message.channel.send("I love you too !");
+        }
+        else if(number ===  1)
+        {  
+            message.channel.send("I think i'm in love too...");
+        }
+        else if(number ===  2)
+        {  
+            message.channel.send("You're not my type of man sorry!");
+        }
+        else
+        {
+            message.channel.send("Aww you're so cute ! No wonder you're one of my best friend !");
+        }
+    }
     else if(str.includes("Djeeta") === true && str.includes("?") === true)
     {
         let number = Math.floor(Math.random() * 8);
