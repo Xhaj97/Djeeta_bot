@@ -16,6 +16,7 @@ const help =
 
 bot.on('ready', () => {
     console.log('Server is ready.');
+    bot.user.setActivity('Granblue Fantasy');
 });
 
 
