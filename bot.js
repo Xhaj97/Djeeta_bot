@@ -2,17 +2,27 @@
 // VARIABLES
 const Discord =  require('discord.js');
 const bot = new Discord.Client();
-const sql = require("sqlite");
-sql.open("./score.sqlite");
 
 // VARIABLES
 const help =
-    '\n__***Commands list:***__' +
+    '__**Commands list:**__' +
     '\n' +
-    '\n!choose choice1 or choice2' +
-    '\n!ranking' +
-    '\n!mylevel' +
-    '\n!mypoints';
+    '\n!helpme'+
+    '\n!roleslist' +
+    '\n!addrole ---' +
+    '\n!removerole ---' +
+    '\n!choose choice1 or choice2'+
+    '\n'+
+    '\nDjeeta answers your do/how/why questions !';
+
+const roleslist =
+    '__**List of roles:**__'+
+    '\n'+
+    '\n**Magna2**: shiva, europa, grimnir, alexiel, metatron, avatar'+
+    '\n**Special**: go, ubahahl'+
+    '\n**FJ weird stuff**: degenerate'+
+    '\n'+
+    '\n**WARNING**, roles are case sensitive ! ~~Also, degenerate role cannot be removed if added~~ lol.';
 
 bot.on('ready', () => {
     console.log('Server is ready.');
@@ -42,6 +52,12 @@ bot.on('message', message => {
     // if it's help
     if (str === '!helpme') {
         message.channel.send(help);
+    }
+
+    // see roles list
+    else if(str.includes("!roleslist"))
+    {
+        message.channel.send(roleslist);
     }
 
     // addrole
@@ -493,67 +509,6 @@ bot.on('message', message => {
             temp = temp.substring(str.indexOf("or")+3, );
             message.channel.send("Choose : " + temp);
         }
-    }
-
-    sql.get(`SELECT * FROM scores WHERE userId ="${message.author.id}"`).then(row => {
-        if (!row) {
-            sql.run("INSERT INTO scores (userId, username, points, level) VALUES (?, ?, ?, ?)", [message.author.id, message.author.tag, 1, 0]);
-        } else {
-            let curLevel = Math.floor(0.2 * Math.sqrt(row.points + 1));
-            if (curLevel > row.level) {
-                row.level = curLevel;
-                sql.run(`UPDATE scores SET points = ${row.points + 1}, level = ${row.level} WHERE userId = ${message.author.id}`);
-                message.reply(`You've leveled up to level **${curLevel}**! Ain't that dandy?`);
-            }
-            sql.run(`UPDATE scores SET points = ${row.points + 1} WHERE userId = ${message.author.id}`);
-        }
-    }).catch(() => {
-        console.error;
-        sql.run("CREATE TABLE IF NOT EXISTS scores (userId TEXT, username TEXT, points INTEGER, level INTEGER)").then(() => {
-            sql.run("INSERT INTO scores (userId, username, points, level) VALUES (?, ?, ?, ?)", [message.author.id, message.author.tag, 1, 0]);
-        });
-    });
-
-    if (message.content.startsWith("!mylevel")) {
-        sql.get(`SELECT * FROM scores WHERE userId ="${message.author.id}"`).then(row => {
-            if (!row) return message.reply("Your current level is 0");
-            message.reply(`${row.username}, your current level is ${row.level}`);
-        });
-    }
-
-    if (message.content.startsWith("!mypoints")) {
-        sql.get(`SELECT * FROM scores WHERE userId ="${message.author.id}"`).then(row => {
-            if (!row) return message.reply("sadly you do not have any points yet!");
-            message.reply(`you currently have ${row.points} points, good going!`);
-        });
-    }
-
-    if (message.content.startsWith("!ranking")) {
-
-        sql.get(`SELECT * FROM scores ORDER BY points DESC LIMIT 0, 1`).then(result => {
-            if (!result) return message.channel.send("1 none");
-            message.channel.send(`Ranking:\n1 ${result.username}`);
-
-            sql.get(`SELECT * FROM scores ORDER BY points DESC LIMIT 1, 1`).then(result2 => {
-                if (!result2) return message.channel.send("2 none");
-                message.channel.send(`\n2 ${result2.username}`);
-
-                sql.get(`SELECT * FROM scores ORDER BY points DESC LIMIT 2, 1`).then(result3 => {
-                    if (!result3) return message.channel.send("3 none");
-                    message.channel.send(`\n3 ${result3.username}`);
-
-                    sql.get(`SELECT * FROM scores ORDER BY points DESC LIMIT 3, 1`).then(result4 => {
-                        if (!result4) return message.channel.send("4 none");
-                        message.channel.send(`\n4 ${result4.username}`);
-
-                        sql.get(`SELECT * FROM scores ORDER BY points DESC LIMIT 4, 1`).then(result5 => {
-                            if (!result5) return message.channel.send("5 none");
-                            message.channel.send(`\n5 ${result5.username}`);
-                        });
-                    });
-                });
-            });
-        });
     }
 });
 
