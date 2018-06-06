@@ -567,7 +567,7 @@ bot.on('message', message => {
         }
     }
 
-    else if(str.includes("Djeeta") === true && str.includes("!") === true)
+    else if(str.startsWith("Djeeta") === true && str.includes("!") === true)
     {
         let number = Math.floor(Math.random() * 4);
         if (number === 0)
