@@ -35,7 +35,7 @@ const emolist =
     '\nsoiya, lecia, woo,'+
     '\nlewd, rainbow, shock,'+
     '\nnani, shuura, rage,'+
-    '\nkoke'+
+    '\nkoke, bored'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -91,6 +91,12 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/risend/vampy/master/images/salt.png"
+            });
+        }
+        else if (str.includes("bored"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/bored.png"
             });
         }
         else if (str.includes("bow"))
@@ -189,7 +195,6 @@ bot.on('message', message => {
                 file: "https://risend.github.io/vampy/images/shock.png"
             });
         }
-
         else if (str.includes("nani"))
         {
             message.channel.send(" ", {
@@ -214,7 +219,6 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/koke.jpg"
             });
         }
-
         else
         {
             message.channel.send("This emoji doesn't exist. Please see !emojilist.");
