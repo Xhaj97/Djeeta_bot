@@ -34,7 +34,8 @@ const emolist =
     '\nmuscles, eh, help,'+
     '\nsoiya, lecia, woo,'+
     '\nlewd, rainbow, shock,'+
-    '\nnani'+
+    '\nnani, shuura, rage,'+
+    '\nkoke'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
