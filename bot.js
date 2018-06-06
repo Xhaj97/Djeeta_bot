@@ -195,6 +195,24 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/nani.jpg"
             });
         }
+        else if (str.includes("shuura"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/shuura.jpg"
+            });
+        }
+        else if (str.includes("rage"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/rage.jpg"
+            });
+        }
+        else if (str.includes("koke"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/koke.jpg"
+            });
+        }
 
         else
         {
