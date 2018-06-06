@@ -64,7 +64,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole fire"))
     {
         if(message.member.roles.has('256273223019134987')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('256273223019134987')
                 .then(console.log)
@@ -86,7 +86,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole water"))
     {
         if(message.member.roles.has('256273237447671820')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('256273237447671820')
                 .then(console.log)
@@ -108,7 +108,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole wind"))
     {
         if(message.member.roles.has('256273265922670593')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('256273265922670593')
                 .then(console.log)
@@ -130,7 +130,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole earth"))
     {
         if(message.member.roles.has('256273252417011713')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('256273252417011713')
                 .then(console.log)
@@ -141,7 +141,7 @@ bot.on('message', message => {
     else if(str.includes("!removerole earth"))
     {
         if(!message.member.roles.has('256273252417011713')) {
-            message.channel.send("You don't have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.removeRole('256273252417011713')
                 .then(console.log)
@@ -152,7 +152,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole dark"))
     {
         if(message.member.roles.has('256273163925717002')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('256273163925717002')
                 .then(console.log)
@@ -174,7 +174,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole light"))
     {
         if(message.member.roles.has('256273197681475585')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('256273197681475585')
                 .then(console.log)
@@ -196,7 +196,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole shiva"))
     {
         if(message.member.roles.has('451762194804113408')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('451762194804113408')
                 .then(console.log)
@@ -218,7 +218,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole europa"))
     {
         if(message.member.roles.has('451762302904172544')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('451762302904172544')
                 .then(console.log)
@@ -240,7 +240,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole grimnir"))
     {
         if(message.member.roles.has('451762484882440202')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('451762484882440202')
                 .then(console.log)
@@ -262,7 +262,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole alexiel"))
     {
         if(message.member.roles.has('451762646316744715')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('451762646316744715')
                 .then(console.log)
@@ -284,7 +284,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole metatron"))
     {
         if(message.member.roles.has('451763004510437386')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('451763004510437386')
                 .then(console.log)
@@ -306,7 +306,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole avatar"))
     {
         if(message.member.roles.has('451763042267693066')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('451763042267693066')
                 .then(console.log)
@@ -328,12 +328,12 @@ bot.on('message', message => {
     else if(str.includes("!addrole ubahahl"))
     {
         if(message.member.roles.has('451763227341094913')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('451763227341094913')
                 .then(console.log)
                 .catch(console.error);
-            message.channel.send("UbahaHL role has been added");
+            message.channel.send("UbahaHL role has been added. You have now access to ubahahl room.");
         }
     }
     else if(str.includes("!removerole ubahahl"))
@@ -350,7 +350,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole go"))
     {
         if(message.member.roles.has('451763323046854666')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role!");
         } else {
             message.member.addRole('451763323046854666')
                 .then(console.log)
@@ -372,7 +372,7 @@ bot.on('message', message => {
     else if(str.includes("!addrole degenerate"))
     {
         if(message.member.roles.has('445037108386725898')) {
-            message.channel.send("You already have this role.");
+            message.channel.send("Y-you already have this role! B-baka!");
         } else {
             message.member.addRole('445037108386725898')
                 .then(console.log)
