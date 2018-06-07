@@ -35,7 +35,7 @@ const emolist =
     '\nsoiya, lecia, woo,'+
     '\nlewd, rainbow, shock,'+
     '\nnani, shuura, rage,'+
-    '\nkoke, bored'+
+    '\nkoke, bored, lily'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -97,6 +97,12 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/bored.png"
+            });
+        }
+        else if (str.includes("lily"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/risend/vampy/master/images/lily.png"
             });
         }
         else if (str.includes("bow"))
