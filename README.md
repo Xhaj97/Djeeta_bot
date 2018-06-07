@@ -1,2 +1,2 @@
-# Djeeta_bot beta version
-For Gensokyo
+# Djta_bot beta version
+
