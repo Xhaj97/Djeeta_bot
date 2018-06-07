@@ -227,7 +227,7 @@ bot.on('message', message => {
         }
         else
         {
-            message.channel.send("This emoji doesn't exist. Please see !emojilist.");
+            message.channel.send("This emoji doesn't exist. Please see !emolist.");
         }
     }
 
