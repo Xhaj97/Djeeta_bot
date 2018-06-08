@@ -100,6 +100,12 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/bored.png"
             });
         }
+        else if (str.includes("whale"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/whale.png"
+            });
+        }
         else if (str.includes("lily"))
         {
             message.channel.send(" ", {
