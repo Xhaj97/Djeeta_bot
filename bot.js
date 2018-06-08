@@ -36,7 +36,7 @@ const emolist =
     '\nlewd, rainbow, shock,'+
     '\nnani, shuura, rage,'+
     '\nkoke, bored, lily,'+
-    '\nshy'+
+    '\nshy, whale'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
