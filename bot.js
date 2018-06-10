@@ -36,7 +36,7 @@ const emolist =
     '\nlewd, rainbow, shock,'+
     '\nnani, shuura, rage,'+
     '\nkoke, bored, lily,'+
-    '\nshy, whale'+
+    '\nshy, whale, slack'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -98,6 +98,12 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/bored.png"
+            });
+        }
+        else if (str.includes("slack"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/slack.png"
             });
         }
         else if (str.includes("whale"))
