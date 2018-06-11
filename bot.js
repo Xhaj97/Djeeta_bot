@@ -131,7 +131,7 @@ bot.on('message', message => {
         else if (str.includes("boldgar"))
         {
             message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/gold.png"
+                file: "http://i65.tinypic.com/lwr6d.png"
             });
         }
         else if (str.includes("ball"))
