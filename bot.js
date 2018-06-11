@@ -28,15 +28,13 @@ const roleslist =
 const emolist =
     '__**List of emojis:**__'+
     '\n'+
-    '\ncool, salt, bow,'+
-    '\nball, awesome, amazing,'+
-    '\ncry, claris, do it,'+
-    '\nmuscles, eh, help,'+
-    '\nsoiya, lecia, woo,'+
-    '\nlewd, rainbow, shock,'+
-    '\nnani, shuura, rage,'+
-    '\nkoke, bored, lily,'+
-    '\nshy, whale, slack'+
+    '\ncool, salt, bow, ball,'+
+    '\nawesome, amazing, cry, claris,'+
+    '\ndo it, muscle, eh, help,'+
+    '\nsoiya, lecia, woo, lewd'+
+    '\nrainbow, shock, nani, shuura'+
+    '\nrage, koke, bored, lily,'+
+    '\nshy, whale, slack, boldgar'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -128,6 +126,12 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/risend/vampy/master/images/bow2.png"
+            });
+        }
+        else if (str.includes("boldgar"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/gold.png"
             });
         }
         else if (str.includes("ball"))
