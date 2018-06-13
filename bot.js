@@ -34,7 +34,8 @@ const emolist =
     '\nsoiya, lecia, woo, lewd'+
     '\nrainbow, shock, nani, shuura'+
     '\nrage, koke, bored, lily,'+
-    '\nshy, whale, slack, boldgar'+
+    '\nshy, whale, slack, boldgar,'+
+    '\nnice, rekt'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -108,6 +109,18 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/whale.png"
+            });
+        }
+        else if (str.includes("nice"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/nice.png"
+            });
+        }
+        else if (str.includes("rekt"))
+        {
+            message.channel.send(" ", {
+                file: "http://i0.kym-cdn.com/photos/images/newsfeed/000/739/555/d4c.gif"
             });
         }
         else if (str.includes("lily"))
