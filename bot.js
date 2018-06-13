@@ -35,7 +35,8 @@ const emolist =
     '\nrainbow, shock, nani, shuura'+
     '\nrage, koke, bored, lily,'+
     '\nshy, whale, slack, boldgar,'+
-    '\nnice, rekt, leech'+
+    '\nnice, rekt, leech, yipyuel,'+
+    '\nyipsochie'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -121,6 +122,18 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/nice.png"
+            });
+        }
+        else if (str.includes("yipyuel"))
+        {
+            message.channel.send(" ", {
+                file: "http://vampy.moe/images/emojis/official2/yipyuel.png"
+            });
+        }
+        else if (str.includes("yipsochie"))
+        {
+            message.channel.send(" ", {
+                file: "http://vampy.moe/images/emojis/official2/yipsochie.png"
             });
         }
         else if (str.includes("rekt"))
