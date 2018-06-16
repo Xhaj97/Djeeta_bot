@@ -741,6 +741,21 @@ bot.on('message', message => {
             message.channel.send("Hum, i'm sure you know the answer !");
         }
     }
+    
+    // Are you question
+    else if (str.includes("Djeeta") === true &&& (str.includes("are you") === true || str.includes("Are you") === true)) {
+        let number = Math.floor(Math.random() * 5);
+        let temp = message.content;
+
+        if(number%2 ===  0)
+        {
+            message.channel.send("Yes i am.");
+        }
+        else if(number%2 === 1)
+        {
+            message.channel.send("Hum, no i am not.");
+        }
+    }
 
     //If it's to make a choice
     else if (str.includes("!choose")) {
@@ -754,12 +769,12 @@ bot.on('message', message => {
         else if(number%2 ===  0)
         {
             temp = temp.substring(8, str.indexOf("or"));
-            message.channel.send("You better choose : " + temp);
+            message.channel.send(temp);
         }
         else if(number%2 === 1)
         {
             temp = temp.substring(str.indexOf("or")+3, );
-            message.channel.send("Choose : " + temp);
+            message.channel.send(temp);
         }
     }
 });
