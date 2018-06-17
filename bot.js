@@ -743,9 +743,9 @@ bot.on('message', message => {
     }
     
     // Are you question
-    else if (str.includes("Djeeta") === true &&& (str.includes("are you") === true || str.includes("Are you") === true)) {
+    else if (str.includes("Djeeta") === true &&& (str.includes("are you") === true || str.includes("Are you") === true)) 
+    {
         let number = Math.floor(Math.random() * 5);
-        let temp = message.content;
 
         if(number%2 ===  0)
         {
