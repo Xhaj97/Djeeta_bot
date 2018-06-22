@@ -36,7 +36,7 @@ const emolist =
     '\nrage, koke, bored, lily,'+
     '\nshy, whale, slack, boldgar,'+
     '\nnice, rekt, leech, yipyuel,'+
-    '\nyipsochie, chomp'+
+    '\nyipsochie, chomp, police'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -128,6 +128,12 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/nice.png"
+            });
+        }
+        else if (str.includes("police"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/police.png"
             });
         }
         else if (str.includes("yipyuel"))
@@ -782,6 +788,44 @@ bot.on('message', message => {
             temp = temp.substring(str.indexOf("or")+3, );
             message.channel.send(temp);
         }
+    }
+    
+    else if (str.includes("gay") || str.includes("Gay")){
+        message.channel.send(" ", {
+            file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/no_u.png"
+        });
+    }
+
+    else if (!message.member.roles.has('276934342708690967') && (str.includes("carry") || str.includes("Carry"))){
+        let number = Math.floor(Math.random() * 3);
+        if (str.includes("need") || str.includes("Need")){
+            if(number ===  0)
+            {
+                message.channel.send("I can carry if you want.");
+            }
+            else if(number ===  1)
+            {
+                message.channel.send("You called for carry ? :3");
+            }
+            else
+            {
+                message.channel.send("Carry me! ");
+            }
+        }
+    }
+
+   else if (!message.member.roles.has('276934342708690967') && (str.includes("when") || str.includes("When"))){
+        if(!str.startsWith("When") && !str.startsWith("when")){
+            message.channel.send("Never.");
+        }
+    }
+    
+    else if (!message.member.roles.has('276934342708690967') && (str.includes("meat") || str.includes("Meat"))){
+
+        if (str.includes("slaves") || str.includes("Slaves") || str.includes("slave") || str.includes("Slave")){
+            message.channel.send("Can i beat the slaves?");
+        }
+
     }
 });
 
