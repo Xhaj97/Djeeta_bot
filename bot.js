@@ -19,11 +19,11 @@ const help =
 const roleslist =
     '__**List of roles:**__'+
     '\n'+
-    '\n**Magna2**: shiva, europa, grimnir, alexiel, metatron, avatar'+
-    '\n**Special**: go, ubahahl'+
-    '\n**FJ weird stuff**: degenerate'+
+    '\n**Magna2**: *shiva, europa, grimnir, alexiel, metatron, avatar*'+
+    '\n**Special**: *go, ubahahl*'+
+    '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
     '\n'+
-    '\n**WARNING**, roles are case sensitive ! ~~Also, degenerate role cannot be removed if added~~ lol.';
+    '\n**WARNING**, roles are case sensitive ! ~~Also, degenerate role cannot be removed if added~~.';
 
 const emolist =
     '__**List of emojis:**__'+
@@ -36,7 +36,7 @@ const emolist =
     '\nrage, koke, bored, lily,'+
     '\nshy, whale, slack, boldgar,'+
     '\nnice, rekt, leech, yipyuel,'+
-    '\nyipsochie'+
+    '\nyipsochie, chomp'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
