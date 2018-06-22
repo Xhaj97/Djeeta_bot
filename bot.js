@@ -815,7 +815,7 @@ bot.on('message', message => {
     }
 
    else if (!message.member.roles.has('276934342708690967') && (str.includes("when") || str.includes("When"))){
-        if(!str.startsWith("When") && !str.startsWith("when")){
+        if(str.endsWith("When") || str.endsWith("when")){
             message.channel.send("Never.");
         }
     }
