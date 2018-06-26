@@ -106,6 +106,12 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/chomp.png"
             });
         }
+        else if (str.includes("shrug"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/shrug.png"
+            });
+        }
         else if (str.includes("slack"))
         {
             message.channel.send(" ", {
