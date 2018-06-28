@@ -833,6 +833,10 @@ bot.on('message', message => {
         }
 
     }
+    else if (str.includes("arrest this man") || str.includes("arrest this dude")) 
+    {
+        message.channel.send("Yes! This is my job after all.");
+    }
 });
 
 bot.login(process.env.BOT_TOKEN);
