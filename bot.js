@@ -797,9 +797,11 @@ bot.on('message', message => {
     }
     
     else if (str.includes("gay") || str.includes("Gay")){
-        message.channel.send(" ", {
-            file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/no_u.png"
-        });
+        if (!str.includes("ogay") && !str.includes("Ogay")){
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/no_u.png"
+            });
+        }
     }
 
     else if (!message.member.roles.has('276934342708690967') && (str.includes("carry") || str.includes("Carry"))){
