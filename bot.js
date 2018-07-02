@@ -179,10 +179,10 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/shy.png"
             });
         }
-        else if (str.includes("shy"))
+        else if (str.includes("yes"))
         {
             message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/yes.png"
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/yes.jpg"
             });
         }
         else if (str.includes("bow"))
