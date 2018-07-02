@@ -37,7 +37,7 @@ const emolist =
     '\nshy, whale, slack, boldgar,'+
     '\nnice, rekt, leech, yipyuel,'+
     '\nyipsochie, chomp, police'+
-    '\nshrug, nio'+
+    '\nshrug, nio, yes'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -177,6 +177,12 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/shy.png"
+            });
+        }
+        else if (str.includes("shy"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/yes.png"
             });
         }
         else if (str.includes("bow"))
