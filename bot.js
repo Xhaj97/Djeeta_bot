@@ -193,7 +193,7 @@ bot.on('message', message => {
         }
         else if (str.includes("boldgar"))
         {
-            if (str.includes("2"){
+            if (str.includes("2")){
                 message.channel.send(" ", {
                     file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/gold2.jpg"
                 });
