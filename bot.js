@@ -195,7 +195,7 @@ bot.on('message', message => {
         {
             if (str.includes("2")){
                 message.channel.send(" ", {
-                    file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/gold2.jpg"
+                    file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/gold2.png"
                 });
             }
             else
