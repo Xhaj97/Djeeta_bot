@@ -37,7 +37,7 @@ const emolist =
     '\nshy, whale, slack, boldgar,'+
     '\nnice, rekt, leech, yipyuel,'+
     '\nyipsochie, chomp, police'+
-    '\nshrug, nio, yes'+
+    '\nshrug, nio, yes, boldgar2'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -193,9 +193,17 @@ bot.on('message', message => {
         }
         else if (str.includes("boldgar"))
         {
-            message.channel.send(" ", {
-                file: "http://i65.tinypic.com/lwr6d.png"
-            });
+            if (str.includes("2"){
+                message.channel.send(" ", {
+                    file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/gold2.jpg"
+                });
+            }
+            else
+            {
+                message.channel.send(" ", {
+                    file: "http://i65.tinypic.com/lwr6d.png"
+                });
+            }
         }
         else if (str.includes("ball"))
         {
