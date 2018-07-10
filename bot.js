@@ -107,6 +107,12 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/chomp.png"
             });
         }
+         else if (str.includes("ping"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/ping.gif"
+            });
+        }
         else if (str.includes("nio"))
         {
             message.channel.send(" ", {
