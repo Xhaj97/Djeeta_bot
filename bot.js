@@ -38,6 +38,7 @@ const emolist =
     '\nnice, rekt, leech, yipyuel,'+
     '\nyipsochie, chomp, police'+
     '\nshrug, nio, yes, boldgar2'+
+    '\nno, ping'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -111,6 +112,12 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/ping.gif"
+            });
+        }
+        else if (str.includes("no"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/no.png"
             });
         }
         else if (str.includes("nio"))
