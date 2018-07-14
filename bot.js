@@ -28,17 +28,17 @@ const roleslist =
 const emolist =
     '__**List of emojis:**__'+
     '\n'+
-    '\ncool, salt, bow, ball,'+
+    '\ncool, salt, bow,'+
     '\nawesome, amazing, cry, claris,'+
-    '\ndo it, muscle, eh, help,'+
-    '\nsoiya, lecia, woo, lewd'+
-    '\nrainbow, shock, nani, shuura'+
-    '\nrage, koke, bored, lily,'+
+    '\neh, help, ping'+
+    '\nok, woo, lewd'+
+    '\nrainbow, shock, nani'+
+    '\nrage, bored, lily,'+
     '\nshy, whale, slack, boldgar,'+
     '\nnice, rekt, leech, yipyuel,'+
     '\nyipsochie, chomp, police'+
     '\nshrug, nio, yes, boldgar2'+
-    '\nno, ping'+
+    '\nno'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -218,12 +218,6 @@ bot.on('message', message => {
                 });
             }
         }
-        else if (str.includes("ball"))
-        {
-            message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/risend/vampy/master/images/ball.png"
-            });
-        }
         else if (str.includes("awesome"))
         {
             message.channel.send(" ", {
@@ -248,18 +242,6 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/risend/vampy/master/images/claris.png"
             });
         }
-        else if (str.includes("do it"))
-        {
-            message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/risend/vampy/master/images/doit.png"
-            });
-        }
-        else if (str.includes("muscles"))
-        {
-            message.channel.send(" ", {
-                file: "https://risend.github.io/vampy/images/muscles.png"
-            });
-        }
         else if (str.includes("eh"))
         {
             message.channel.send(" ", {
@@ -272,13 +254,7 @@ bot.on('message', message => {
                 file: "https://risend.github.io/vampy/images/help.png"
             });
         }
-        else if (str.includes("soiya"))
-        {
-            message.channel.send(" ", {
-                file: "https://risend.github.io/vampy/images/soiya.png"
-            });
-        }
-        else if (str.includes("lecia"))
+        else if (str.includes("ok"))
         {
             message.channel.send(" ", {
                 file: "https://risend.github.io/vampy/images/lecia.png"
@@ -314,22 +290,10 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/nani.jpg"
             });
         }
-        else if (str.includes("shuura"))
-        {
-            message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/shuura.jpg"
-            });
-        }
         else if (str.includes("rage"))
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/rage.jpg"
-            });
-        }
-        else if (str.includes("koke"))
-        {
-            message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/koke.jpg"
             });
         }
         else
@@ -871,7 +835,18 @@ bot.on('message', message => {
     }
     else if (str.includes("arrest this man") || str.includes("arrest this dude")) 
     {
-        message.channel.send("Yes! This is my job after all.");
+        let number = Math.floor(Math.random() * 5);
+        let temp = message.content;
+
+        if(number%2 ===  0)
+        {
+            message.channel.send("Yes! This is my job after all.");
+        }
+        else
+        {
+            message.channel.send("Got it.");
+        }
+        
     }
 });
 
