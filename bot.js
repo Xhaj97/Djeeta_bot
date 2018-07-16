@@ -793,15 +793,6 @@ bot.on('message', message => {
             message.channel.send(temp);
         }
     }
-    
-    else if (str.includes("gay") || str.includes("Gay")){
-        if (!str.includes("ogay") && !str.includes("Ogay")){
-            message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/no_u.png"
-            });
-        }
-    }
-
     else if (!message.member.roles.has('276934342708690967') && (str.includes("carry") || str.includes("Carry"))){
         let number = Math.floor(Math.random() * 3);
         if (str.includes("need") || str.includes("Need")){
@@ -818,20 +809,6 @@ bot.on('message', message => {
                 message.channel.send("Carry me! ");
             }
         }
-    }
-
-   else if (!message.member.roles.has('276934342708690967') && (str.includes("when") || str.includes("When"))){
-        if(str.endsWith("When") || str.endsWith("when")){
-            message.channel.send("Never.");
-        }
-    }
-    
-    else if (!message.member.roles.has('276934342708690967') && (str.includes("meat") || str.includes("Meat"))){
-
-        if (str.includes("slaves") || str.includes("Slaves") || str.includes("slave") || str.includes("Slave")){
-            message.channel.send("Can i beat the slaves?");
-        }
-
     }
     else if (str.includes("arrest this man") || str.includes("arrest this dude")) 
     {
