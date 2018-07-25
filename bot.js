@@ -7,7 +7,7 @@ const help =
     '__**Commands list:**__' +
     '\n' +
     '\n!helpme'+
-    '\n!roleslist' +
+    '\n!rolelist' +
     '\n!addrole ---' +
     '\n!removerole ---' +
     '\n!emolist' +
@@ -478,7 +478,7 @@ bot.on('message', message => {
         }
         else
         {
-            message.channel.send("This role does not exist. Please see !addroleslist.");
+            message.channel.send("This role does not exist. Please see !rolelist.");
         }
     }
 
@@ -641,7 +641,7 @@ bot.on('message', message => {
         }
         else
         {
-            message.channel.send("This role does not exist. Please see !addroleslist.");
+            message.channel.send("This role does not exist. Please see !rolelist.");
         }
     }
 
