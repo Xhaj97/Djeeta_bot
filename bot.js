@@ -70,7 +70,7 @@ bot.on('message', message => {
     }
 
     // see roles list
-    else if(str.startsWith("!roleslist"))
+    else if(str.startsWith("!rolelist"))
     {
         message.channel.send(roleslist);
     }
