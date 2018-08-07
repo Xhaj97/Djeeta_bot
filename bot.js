@@ -114,6 +114,12 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/ping.gif"
             });
         }
+        else if (str.includes("altoxi"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/altoxi.png"
+            });
+        }
         else if (str.includes("no"))
         {
             message.channel.send(" ", {
