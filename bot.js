@@ -138,6 +138,12 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/homete.png"
             });
         }
+        else if (str.includes("fight"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/fight.png"
+            });
+        }
         else if (str.includes("nio"))
         {
             message.channel.send(" ", {
