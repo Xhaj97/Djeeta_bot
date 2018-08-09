@@ -38,7 +38,7 @@ const emolist =
     '\nnice, rekt, leech, yipyuel,'+
     '\nyipsochie, chomp, police'+
     '\nshrug, nio, yes, boldgar2'+
-    '\nno'+
+    '\nno, sadj, homete'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -124,6 +124,18 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/no.png"
+            });
+        }
+        else if (str.includes("sadj"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/sadj.png"
+            });
+        }
+        else if (str.includes("homete"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/homete.png"
             });
         }
         else if (str.includes("nio"))
