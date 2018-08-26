@@ -30,15 +30,15 @@ const emolist =
     '\n'+
     '\ncool, salt, bow,'+
     '\nawesome, amazing, cry, claris,'+
-    '\neh, help, ping'+
-    '\nok, woo, lewd'+
+    '\neh, help, ok, woo, lewd'+
     '\nrainbow, shock, nani'+
-    '\nrage, bored, lily,'+
+    '\nbored, lily,'+
     '\nshy, whale, slack, boldgar,'+
     '\nnice, rekt, leech, yipyuel,'+
     '\nyipsochie, chomp, police'+
     '\nshrug, nio, yes, boldgar2'+
-    '\nno, sadj, homete'+
+    '\nno, sadj, homete, altoxi'+
+    '\n fight, xarp'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -108,10 +108,10 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/chomp.png"
             });
         }
-         else if (str.includes("ping"))
+         else if (str.includes("xarp"))
         {
             message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/ping.gif"
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/xarp.png"
             });
         }
         else if (str.includes("altoxi"))
@@ -312,12 +312,6 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/nani.jpg"
-            });
-        }
-        else if (str.includes("rage"))
-        {
-            message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/rage.jpg"
             });
         }
         else
