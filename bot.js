@@ -57,7 +57,7 @@ bot.on('guildMemberAdd', member => {
     // Send the message, mentioning the member
     welcomeChannel.send(`Welcome to the server ${member} ! Feel free to add some roles in #bot_spam channel.`);
     welcomeChannel.send(` `, {
-                file: "https://raw.githubusercontent.com/risend/vampy/master/images/cool.png"
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/welcome.png"
             });
 });
 
