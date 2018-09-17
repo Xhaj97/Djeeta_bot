@@ -111,16 +111,10 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/chomp.png"
             });
         }
-         else if (str.includes("xarp"))
-        {
-            message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/xarp.png"
-            });
-        }
         else if (str.includes("altoxi"))
         {
             message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/altoxi.png"
+                file: "https://github.com/Xhaj97/Djeeta_bot/blob/master/img/altoxi.png?raw=true"
             });
         }
         else if (str.includes("no"))
