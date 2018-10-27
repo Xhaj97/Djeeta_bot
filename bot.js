@@ -38,7 +38,7 @@ const emolist =
     '\nyipsochie, chomp, police'+
     '\nshrug, nio, yes, boldgar2'+
     '\nno, sadj, homete, altoxi'+
-    '\n fight, xarp'+
+    '\n fight, xarp, gmorning, gnight'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -121,6 +121,18 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/xarp.png"
+            });
+        }
+        else if (str.includes("gmorning"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/gmorning.png"
+            });
+        }
+        else if (str.includes("gnight"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/gnight.png"
             });
         }
         else if (str.includes("no"))
