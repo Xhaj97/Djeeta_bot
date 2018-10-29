@@ -39,6 +39,7 @@ const emolist =
     '\nshrug, nio, yes, boldgar2'+
     '\nno, sadj, homete, altoxi'+
     '\n fight, xarp, gmorning, gnight'+
+    '\n lecia '+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -139,6 +140,12 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/no.png"
+            });
+        }
+        else if (str.includes("ok"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/ok.png"
             });
         }
         else if (str.includes("sadj"))
@@ -293,7 +300,7 @@ bot.on('message', message => {
                 file: "https://risend.github.io/vampy/images/help.png"
             });
         }
-        else if (str.includes("ok"))
+        else if (str.includes("lecia"))
         {
             message.channel.send(" ", {
                 file: "https://risend.github.io/vampy/images/lecia.png"
