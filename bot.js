@@ -148,6 +148,12 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/ok.png"
             });
         }
+        else if (str.includes("culture"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/culture.png"
+            });
+        }
         else if (str.includes("sadj"))
         {
             message.channel.send(" ", {
