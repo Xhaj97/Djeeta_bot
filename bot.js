@@ -20,7 +20,7 @@ const roleslist =
     '__**List of roles:**__'+
     '\n'+
     '\n**Magna2**: *shiva, europa, grimnir, alexiel, metatron, avatar*'+
-    '\n**Special**: *go, ubahahl*'+
+    '\n**Special**: *go, ubahahl, Malice, Akasha*'+
     '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
     '\n'+
     '\n**WARNING**, roles are case sensitive ! ~~Also, degenerate role cannot be removed if added~~.';
@@ -486,7 +486,28 @@ bot.on('message', message => {
                 message.channel.send("Avatar role has been added");
             }
         }
-
+        else if(str.includes("Malice"))
+        {
+            if(message.member.roles.has('524653613730234398')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('524653613730234398')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Akasha role has been added");
+            }
+        }
+        else if(str.includes("Akasha"))
+        {
+            if(message.member.roles.has('524653709104513024')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('524653709104513024')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Akasha role has been added");
+            }
+        }
         else if(str.includes("ubahahl"))
         {
             if(message.member.roles.has('451763227341094913')) {
