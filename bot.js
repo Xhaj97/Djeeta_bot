@@ -39,7 +39,7 @@ const emolist =
     '\nshrug, nio, yes, boldgar2'+
     '\nno, sadj, homete, altoxi'+
     '\n fight, xarp, gmorning, gnight'+
-    '\n lecia '+
+    '\n lecia, erucry '+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
