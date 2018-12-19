@@ -244,6 +244,12 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/shy.png"
             });
         }
+        else if (str.includes("erucry"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/erucry.png"
+            });
+        }
         else if (str.includes("yes"))
         {
             message.channel.send(" ", {
@@ -494,7 +500,7 @@ bot.on('message', message => {
                 message.member.addRole('524653613730234398')
                     .then(console.log)
                     .catch(console.error);
-                message.channel.send("Akasha role has been added");
+                message.channel.send("Malice role has been added");
             }
         }
         else if(str.includes("Akasha"))
