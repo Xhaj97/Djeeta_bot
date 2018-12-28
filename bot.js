@@ -141,7 +141,7 @@ bot.on('message', message => {
          else if (str.includes("smug"))
         {
             message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/smug.png"
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/smug.jpg"
             });
         }
          else if (str.includes("pholieh"))
