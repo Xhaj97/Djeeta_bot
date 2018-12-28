@@ -39,7 +39,9 @@ const emolist =
     '\nshrug, nio, yes, boldgar2'+
     '\nno, sadj, homete, altoxi'+
     '\n fight, xarp, gmorning, gnight'+
-    '\n lecia, erucry '+
+    '\n lecia, erucry, orotea '+
+    '\n eyy, pholieh, smug'+  
+    '\n zoi'+
     '\n'+
     '\nFeel free to pm Shuura for more emojis.';
 
@@ -122,6 +124,36 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/xarp.png"
+            });
+        }
+         else if (str.includes("orotea"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/orotea.png"
+            });
+        }
+         else if (str.includes("zoi"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/zoi.png"
+            });
+        }
+         else if (str.includes("smug"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/smug.png"
+            });
+        }
+         else if (str.includes("pholieh"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/pholieh.png"
+            });
+        }
+         else if (str.includes("eyy"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/eyy.png"
             });
         }
         else if (str.includes("gmorning"))
