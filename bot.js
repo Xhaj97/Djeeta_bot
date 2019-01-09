@@ -14,7 +14,7 @@ const help =
     '\n!emo ---' +
     '\n!choose choice1 or choice2'+
     '\n'+
-    "\nDjeeta answers your do you/ don't you /how /why questions !";
+    "\nChicken answers your do you/ don't you /how /why questions !";
 
 const roleslist =
     '__**List of roles:**__'+
@@ -751,28 +751,28 @@ bot.on('message', message => {
     }
 
     //Djeeta answers you
-    else if(str.includes("Djeeta") === true && str.includes("love you") === true)
+    else if(str.includes("Chicken") === true && str.includes("love you") === true)
     {
         let number = Math.floor(Math.random() * 5);
         if(number ===  0)
         {
-            message.channel.send("I love you too !");
+            message.channel.send("Chicken loves you too !");
         }
         else if(number ===  1)
         {
-            message.channel.send("I think i'm in love too...");
+            message.channel.send("Huum. What ?");
         }
         else if(number ===  2)
         {
-            message.channel.send("You're not my type of man sorry!");
+            message.channel.send("Chicken only like chicken.");
         }
         else
         {
-            message.channel.send("Let's stay friends!");
+            message.channel.send("Chicken can be friend with you.");
         }
     }
 
-    else if(str.startsWith("Djeeta") === true && str.includes("!") === true)
+    else if(str.startsWith("Chicken") === true && str.includes("!") === true)
     {
         let number = Math.floor(Math.random() * 4);
         if (number === 0)
@@ -794,7 +794,7 @@ bot.on('message', message => {
     }
 
     // Do you question
-    else if(str.includes("Djeeta") === true && str.includes("do you") === true)
+    else if(str.includes("Chicken") === true && str.includes("do you") === true)
     {
         let number = Math.floor(Math.random() * 4);
         if (number === 0)
@@ -807,7 +807,7 @@ bot.on('message', message => {
         }
         else if(number === 2)
         {
-            message.channel.send("Hum i'm not sure how to answer sorry !");
+            message.channel.send("Hum. Chicken don't know the answer.");
         }
         else if(number === 3)
         {
@@ -818,7 +818,7 @@ bot.on('message', message => {
     }
 
     //don't you question
-    else if(str.includes("Djeeta") === true && str.includes("don't you") === true)
+    else if(str.includes("Chicken") === true && str.includes("don't you") === true)
     {
         let number = Math.floor(Math.random() * 4);
         if (number === 0)
@@ -842,7 +842,7 @@ bot.on('message', message => {
     }
 
     // Why question
-    else if(str.includes("Djeeta") === true && (str.includes("why") === true || str.includes("Why") === true))
+    else if(str.includes("Chicken") === true && (str.includes("why") === true || str.includes("Why") === true))
     {
         let number = Math.floor(Math.random() * 4);
         if (number === 0)
@@ -864,7 +864,7 @@ bot.on('message', message => {
     }
     
     // Are you question
-    else if (str.includes("Djeeta") === true && (str.includes("are you") === true || str.includes("Are you") === true)) 
+    else if (str.includes("Chicken") === true && (str.includes("are you") === true || str.includes("Are you") === true)) 
     {
         let number = Math.floor(Math.random() * 5);
 
@@ -874,7 +874,7 @@ bot.on('message', message => {
         }
         else if(number%2 === 1)
         {
-            message.channel.send("Hum, no i am not.");
+            message.channel.send("I am too lazy to answer.");
         }
     }
 
@@ -907,7 +907,7 @@ bot.on('message', message => {
             }
             else if(number ===  1)
             {
-                message.channel.send("You called for carry ? :3");
+                message.channel.send("You called for carry ? -_-");
             }
             else
             {
