@@ -47,7 +47,7 @@ const emolist =
 
 bot.on('ready', () => {
     console.log('Server is ready.');
-    bot.user.setActivity('Granblue Fantasy');
+    bot.user.setActivity('with chickens');
 });
 
 
