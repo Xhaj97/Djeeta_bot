@@ -892,9 +892,22 @@ bot.on('message', message => {
     {
         let number = Math.floor(Math.random() * 5);
         
+        if(number%2 === 0)
+        {
+            message.channel.send("Chicks !");
+        }
+        
         else if(number%2 === 1)
         {
             message.channel.send("I am too lazy to answer.");
+        }
+        else if(number%2 === 2)
+        {
+            message.channel.send("Chicks! ");
+        }
+        else if(number%2 === 2)
+        {
+            message.channel.send("Not listening ! ");
         }
     }
 
