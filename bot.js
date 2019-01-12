@@ -905,7 +905,7 @@ bot.on('message', message => {
         {
             message.channel.send("Chicks! ");
         }
-        else if(number%2 === 2)
+        else if(number%2 === 3)
         {
             message.channel.send("Not listening ! ");
         }
