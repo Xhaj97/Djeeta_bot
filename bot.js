@@ -760,7 +760,9 @@ bot.on('message', message => {
         }
         else if(number ===  1)
         {
-            message.channel.send("Huum. What ?");
+            message.channel.send("Huum. 
+                                 
+                                 ?");
         }
         else if(number ===  2)
         {
@@ -792,6 +794,32 @@ bot.on('message', message => {
             message.channel.send("Hi, what's up ?");
         }
     }
+    
+    else if(str.includes("Chicken") === true && str.includes("what do") === true)
+    {
+        let number = Math.floor(Math.random() * 5);
+        if (number === 0)
+        {
+            message.channel.send("Humm...Not telling you.");
+        }
+        else if(number === 1)
+        {
+            message.channel.send("I want to eat chicken o_o.");
+        }
+        else if(number === 4)
+        {
+            message.channel.send("Give me something to eat first.");
+        }
+        else if(number === 2)
+        {
+            message.channel.send("Chicken don't know the answer.");
+        }
+        else if(number === 3)
+        {
+            message.channel.send("Zzzzz");
+
+        }
+    }
 
     // Do you question
     else if(str.includes("Chicken") === true && str.includes("do you") === true)
@@ -811,9 +839,8 @@ bot.on('message', message => {
         }
         else if(number === 3)
         {
-            message.channel.send("Yes !");
-            message.channel.send("No !");
-            message.channel.send("Hum.... i don't know...");
+            message.channel.send("Zzzzz");
+
         }
     }
 
@@ -835,9 +862,8 @@ bot.on('message', message => {
         }
         else if(number === 3)
         {
-            message.channel.send("Yes !");
-            message.channel.send("No !");
-            message.channel.send("Hum.... i don't know...");
+            message.channel.send("Zzzzz");
+
         }
     }
 
@@ -851,15 +877,15 @@ bot.on('message', message => {
         }
         else if(number === 1)
         {
-            message.channel.send("That is because things have been done this way i guess...");
+            message.channel.send("Because Chicken wanted it to be like this !");
         }
         else if(number === 2)
         {
-            message.channel.send("That's a good question ! The captain should know the answer!");
+            message.channel.send("That's a good question ! Let me sleep now.");
         }
         else if(number === 3)
         {
-            message.channel.send("Hum, i'm sure you know the answer !");
+            message.channel.send("I am hungry ! I want to watch TV");
         }
     }
     
@@ -867,11 +893,7 @@ bot.on('message', message => {
     else if (str.includes("Chicken") === true && (str.includes("are you") === true || str.includes("Are you") === true)) 
     {
         let number = Math.floor(Math.random() * 5);
-
-        if(number%2 ===  0)
-        {
-            message.channel.send("Yes i am.");
-        }
+        
         else if(number%2 === 1)
         {
             message.channel.send("I am too lazy to answer.");
@@ -885,7 +907,7 @@ bot.on('message', message => {
 
         if(!str.includes("or"))
         {
-            message.channel.send("Use 'or' between the two elements.");
+            message.channel.send("Use 'or' between the TWO elements.");
         }
         else if(number%2 ===  0)
         {
