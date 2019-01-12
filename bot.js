@@ -760,9 +760,7 @@ bot.on('message', message => {
         }
         else if(number ===  1)
         {
-            message.channel.send("Huum. 
-                                 
-                                 ?");
+            message.channel.send("Huum ?");
         }
         else if(number ===  2)
         {
