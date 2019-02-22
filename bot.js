@@ -73,7 +73,7 @@ bot.on('guildMemberRemove', member => {
     if (!FarewellChannel) return;
     // Send the message, mentioning the member
     FarewellChannel.send(`**${member.username}** has just left server.. Chicken will miss you.... Maybe`);
-}
+});
 
 // To see the commands list
 bot.on('message', message => {
