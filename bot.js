@@ -68,7 +68,7 @@ bot.on('guildMemberAdd', member => {
 bot.on('guildMemberRemove', member => {
     //client.channels.find('log_channel').send(`**${member.username}** has just left server.. Bye Bye`);
     // Send the message to a designated channel on a server:
-    const FarewellChannel = client.channels.find(channel => channel.name === 'general_lounge');
+    const FarewellChannel = member.guild.channels.find(channel => channel.name === 'general_lounge');
     // Do nothing if the channel wasn't found on this server
     if (!FarewellChannel) return;
     // Send the message, mentioning the member
