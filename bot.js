@@ -64,6 +64,17 @@ bot.on('guildMemberAdd', member => {
             });
 });
 
+// To bid farewell to a leaving member
+bot.on('guildMemberRemove', member => {
+    //client.channels.find('log_channel').send(`**${member.username}** has just left server.. Bye Bye`);
+    // Send the message to a designated channel on a server:
+    const FarewellChannel = client.channels.find(channel => channel.name === 'general_lounge');
+    // Do nothing if the channel wasn't found on this server
+    if (!FarewellChannel) return;
+    // Send the message, mentioning the member
+    FarewellChannel.send(`**${member.username}** has just left server.. Chicken will miss you.... Maybe`);
+}
+
 // To see the commands list
 bot.on('message', message => {
 
