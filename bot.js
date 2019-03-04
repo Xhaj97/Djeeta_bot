@@ -23,7 +23,9 @@ const roleslist =
     '\n**Special**: *go, ubahahl, Malice, Akasha*'+
     '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
     '\n'+
-    '\n'+ message.react("⚠")+ '**WARNING**, roles are case sensitive ! ~~Also, degenerate role cannot be removed if added~~.' +message.react("⚠");
+    '\n'+ message.react("⚠") + message.react("⚠") + message.react("⚠") +
+    '\n **WARNING**, roles are case sensitive ! ~~Also, degenerate role cannot be removed if added~~.' +
+    '\n' + message.react("⚠") + message.react("⚠") + message.react("⚠");
 
 const emolist =
     '__**List of emojis:**__'+
@@ -58,7 +60,7 @@ bot.on('guildMemberAdd', member => {
     // Do nothing if the channel wasn't found on this server
     if (!welcomeChannel) return;
     // Send the message, mentioning the member
-    welcomeChannel.send(`Welcome to the server ${member} ! Feel free to add some roles in <#257009251438821386>.`);
+    welcomeChannel.send(`Welcome to the server ${member} ! Feel free to add some roles in <#257009251438821386>`);
     welcomeChannel.send(` `, {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/welcome.png"
             });
