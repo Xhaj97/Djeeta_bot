@@ -14,7 +14,7 @@ const help =
     '\n!emo ---' +
     '\n!choose choice1 or choice2'+
     '\n'+
-    "\nChicken answers your do you/ don't you /how /why questions !";
+    "\nThe bot answers your do you/ don't you /how /why questions !";
 
 const roleslist =
     '__**List of roles:**__'+
@@ -23,7 +23,8 @@ const roleslist =
     '\n**Special**: *go, ubahahl, Malice, Akasha*'+
     '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
     '\n'+
-    '\n ⚠⚠⚠ roles are case sensitive ! Also, degenerate role cannot be removed if added. ⚠⚠⚠';
+    '\n Want more roles ? PM the Officers or directly <@!159687457049280512>' +
+    '\n ⚠ Roles are case sensitive ! Also, **degenerate** role cannot be removed if added. ⚠';
 
 const emolist =
     '__**List of emojis:**__'+
@@ -43,7 +44,7 @@ const emolist =
     '\n eyy, pholieh, smug'+  
     '\n zoi'+
     '\n'+
-    '\nFeel free to pm Shuura for more emojis.';
+    '\nFeel free to pm <@!159687457049280512> for more emojis.';
 
 bot.on('ready', () => {
     console.log('Server is ready.');
