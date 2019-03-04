@@ -23,9 +23,7 @@ const roleslist =
     '\n**Special**: *go, ubahahl, Malice, Akasha*'+
     '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
     '\n'+
-    '\n'+ message.react("⚠") + message.react("⚠") + message.react("⚠") +
-    '\n **WARNING**, roles are case sensitive ! ~~Also, degenerate role cannot be removed if added~~.' +
-    '\n' + message.react("⚠") + message.react("⚠") + message.react("⚠");
+    '\n ⚠⚠⚠ roles are case sensitive ! Also, degenerate role cannot be removed if added. ⚠⚠⚠';
 
 const emolist =
     '__**List of emojis:**__'+
