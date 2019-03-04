@@ -23,7 +23,7 @@ const roleslist =
     '\n**Special**: *go, ubahahl, Malice, Akasha*'+
     '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
     '\n'+
-    '\n**WARNING**, roles are case sensitive ! ~~Also, degenerate role cannot be removed if added~~.';
+    '\n'+ message.react("⚠")+ '**WARNING**, roles are case sensitive ! ~~Also, degenerate role cannot be removed if added~~.' +message.react("⚠");
 
 const emolist =
     '__**List of emojis:**__'+
@@ -58,7 +58,7 @@ bot.on('guildMemberAdd', member => {
     // Do nothing if the channel wasn't found on this server
     if (!welcomeChannel) return;
     // Send the message, mentioning the member
-    welcomeChannel.send(`Welcome to the server ${member} ! Feel free to add some roles in #bot_spam channel.`);
+    welcomeChannel.send(`Welcome to the server ${member} ! Feel free to add some roles in <#257009251438821386>.`);
     welcomeChannel.send(` `, {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/welcome.png"
             });
@@ -67,7 +67,7 @@ bot.on('guildMemberAdd', member => {
 // To bid farewell to a leaving member
 bot.on('guildMemberRemove', member => {
     //client.channels.find('log_channel').send(`**${member.username}** has just left server.. Bye Bye`);
-    client.channels.find('log_channel').send(`**${member.username}** has just left server.. Chicken will miss you.... Maybe`);
+    bot.channels.find('log_channel').send(`**${member.username}** has just left server.. Chicken will miss you.... Maybe`);
 });
 
 // To see the commands list
