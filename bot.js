@@ -42,7 +42,7 @@ const emolist =
     '\n fight, xarp, gmorning, gnight'+
     '\n lecia, erucry, orotea '+
     '\n eyy, pholieh, smug'+  
-    '\n zoi'+
+    '\n zoi, zoi2, smug2'+
     '\n'+
     '\nFeel free to pm <@!159687457049280512> for more emojis.';
 
@@ -119,6 +119,18 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/chomp.png"
+            });
+        }
+        else if (str.includes("smug2"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/smug2.png"
+            });
+        }
+        else if (str.includes("zoi2"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/zoi2.png"
             });
         }
         else if (str.includes("altoxi"))
