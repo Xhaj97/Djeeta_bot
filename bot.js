@@ -763,6 +763,28 @@ bot.on('message', message => {
                 message.channel.send("Grand Order role has been removed.");
             }
         }
+        else if(str.includes("akasha"))
+        {
+            if(!message.member.roles.has('524653709104513024')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('524653709104513024')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Akasha role has been removed.");
+            }524653709104513024
+        }
+        else if(str.includes("malice"))
+        {
+            if(message.member.roles.has('524653613730234398')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.removeRole('524653613730234398')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Malice role has been removed.");
+            }
+        }
         else
         {
             message.channel.send("This role does not exist. Please see !rolelist.");
