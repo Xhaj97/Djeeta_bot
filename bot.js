@@ -776,8 +776,8 @@ bot.on('message', message => {
         }
         else if(str.includes("malice"))
         {
-            if(message.member.roles.has('524653613730234398')) {
-                message.channel.send("Y-you already have this role!");
+            if(!message.member.roles.has('524653613730234398')) {
+                message.channel.send("You don't have this role.");
             } else {
                 message.member.removeRole('524653613730234398')
                     .then(console.log)
