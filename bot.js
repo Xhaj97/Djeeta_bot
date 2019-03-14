@@ -19,6 +19,7 @@ const help =
 const roleslist =
     '__**List of roles:**__'+
     '\n'+
+    '\n**Elements**: *fire, water, earth, wind, dark, light*'+  
     '\n**Magna2**: *shiva, europa, grimnir, alexiel, metatron, avatar*'+
     '\n**Special**: *go, ubahahl, malice, akasha*'+
     '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
