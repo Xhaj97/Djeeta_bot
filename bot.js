@@ -7,6 +7,7 @@ const help =
     '__**Commands list:**__' +
     '\n' +
     '\n!helpme'+
+    '\n!avatar <mention somebody>' +
     '\n!rolelist' +
     '\n!addrole ---' +
     '\n!removerole ---' +
@@ -81,6 +82,13 @@ bot.on('message', message => {
     // if it's help
     if (str === '!helpme') {
         message.channel.send(help);
+    }
+    
+    if (message.content === "!avatar") {
+        let embed = new Discord.RichEmbed()
+        .setImage(message.author.avatarURL)
+        .setColor('#275BF0')
+         message.channel.send(embed)
     }
 
     // see roles list
