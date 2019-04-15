@@ -21,7 +21,7 @@ const roleslist =
     '\n'+
     '\n**Elements**: *fire, water, earth, wind, dark, light*'+  
     '\n**Magna2**: *shiva, europa, grimnir, alexiel, metatron, avatar*'+
-    '\n**Special**: *go, ubahahl, malice, akasha*'+
+    '\n**Special**: *go, ubahahl, malice, akasha, lucilius*'+
     '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
     '\n'+
     '\n Want more roles ? PM the Officers or directly <@!159687457049280512>' +
@@ -601,6 +601,18 @@ bot.on('message', message => {
                 message.channel.send("Degenerate role has been added. You cannot remove this role.");
             }
         }
+        
+        else if(str.includes("lucilius"))
+        {
+            if(message.member.roles.has('567229397938077696')) {
+                message.channel.send("Y-you already have this role! B-baka!");
+            } else {
+                message.member.addRole('567229397938077696')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Lucilius role has been added.");
+            }
+        }
         else
         {
             message.channel.send("This role does not exist. Please see !rolelist.");
@@ -784,6 +796,17 @@ bot.on('message', message => {
                     .then(console.log)
                     .catch(console.error);
                 message.channel.send("Malice role has been removed.");
+            }
+        }
+        else if(str.includes("lucilius"))
+        {
+            if(!message.member.roles.has('567229397938077696')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('567229397938077696')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Lucilius role has been removed.");
             }
         }
         else
