@@ -631,7 +631,7 @@ bot.on('message', message => {
     }
 
     // removerole
-    else if(str.startsWith("!removerole"))
+    else if(str.startsWith("!removerole") && !message.member.roles.has('276934342708690967'))
     {
         if(str.includes("fire"))
         {
@@ -827,7 +827,7 @@ bot.on('message', message => {
     }
 
     //Djeeta answers you
-    else if(str.includes("Chicken") === true && str.includes("love you") === true)
+    else if(str.includes("Chicken") === true && str.includes("love you") === true && !message.member.roles.has('276934342708690967'))
     {
         let number = Math.floor(Math.random() * 5);
         if(number ===  0)
@@ -848,7 +848,7 @@ bot.on('message', message => {
         }
     }
 
-    else if(str.startsWith("Chicken") === true && str.includes("!") === true)
+    else if(str.startsWith("Chicken") === true && str.includes("!") === true && !message.member.roles.has('276934342708690967'))
     {
         let number = Math.floor(Math.random() * 4);
         if (number === 0)
@@ -869,7 +869,7 @@ bot.on('message', message => {
         }
     }
     
-    else if(str.includes("Chicken") === true && str.includes("what do") === true)
+    else if(str.includes("Chicken") === true && str.includes("what do") === true && !message.member.roles.has('276934342708690967'))
     {
         let number = Math.floor(Math.random() * 5);
         if (number === 0)
@@ -896,7 +896,7 @@ bot.on('message', message => {
     }
 
     // Do you question
-    else if(str.includes("Chicken") === true && str.includes("do you") === true)
+    else if(str.includes("Chicken") === true && str.includes("do you") === true && !message.member.roles.has('276934342708690967'))
     {
         let number = Math.floor(Math.random() * 4);
         if (number === 0)
@@ -919,7 +919,7 @@ bot.on('message', message => {
     }
 
     //don't you question
-    else if(str.includes("Chicken") === true && str.includes("don't you") === true)
+    else if(str.includes("Chicken") === true && str.includes("don't you") === true && !message.member.roles.has('276934342708690967'))
     {
         let number = Math.floor(Math.random() * 4);
         if (number === 0)
@@ -942,7 +942,7 @@ bot.on('message', message => {
     }
 
     // Why question
-    else if(str.includes("Chicken") === true && (str.includes("why") === true || str.includes("Why") === true))
+    else if(str.includes("Chicken") === true && !message.member.roles.has('276934342708690967') && (str.includes("why") === true || str.includes("Why") === true) )
     {
         let number = Math.floor(Math.random() * 4);
         if (number === 0)
@@ -964,7 +964,7 @@ bot.on('message', message => {
     }
     
     // Are you question
-    else if (str.includes("Chicken") === true && (str.includes("are you") === true || str.includes("Are you") === true)) 
+    else if (str.includes("Chicken") === true && !message.member.roles.has('276934342708690967') && (str.includes("are you") === true || str.includes("Are you") === true)) 
     {
         let number = Math.floor(Math.random() * 5);
         
@@ -988,7 +988,7 @@ bot.on('message', message => {
     }
 
     //If it's to make a choice
-    else if (str.includes("!choose")) {
+    else if (str.includes("!choose") && !message.member.roles.has('276934342708690967')) {
         let number = Math.floor(Math.random() * 5);
         let temp = message.content;
 
@@ -1024,7 +1024,7 @@ bot.on('message', message => {
             }
         }
     }
-    else if (str.includes("arrest this man") || str.includes("arrest this dude")) 
+    else if (str.includes("arrest this man") && !message.member.roles.has('276934342708690967') || str.includes("arrest this dude") ) 
     {
         let number = Math.floor(Math.random() * 5);
         let temp = message.content;
