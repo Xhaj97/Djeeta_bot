@@ -84,11 +84,14 @@ bot.on('message', message => {
         message.channel.send(help);
     }
     
-    if (message.content === "!avatar") {
-        let embed = new Discord.RichEmbed()
-        .setImage(message.author.avatarURL)
-        .setColor('#275BF0')
-         message.channel.send(embed)
+    if (message.content.startsWith("!avatar")) {
+        if (!message.mentions.users.size) {
+            return message.channel.send(`Your avatar: ${message.author.displayAvatarURL}`);
+        }
+        const avatarList = message.mentions.users.map(user => {
+            return `${user.username}\'s avatar: ${user.displayAvatarURL}`;
+        });
+        message.channel.send(avatarList);
     }
 
     // see roles list
@@ -104,7 +107,7 @@ bot.on('message', message => {
     }
 
     // emojis
-    else if (str.startsWith("!emo"))
+    else if (str.startsWith("!emo") && !message.member.roles.has('276934342708690967'))
     {
         if (str.includes("cool"))
         {
@@ -948,7 +951,7 @@ bot.on('message', message => {
         }
         else if(number === 1)
         {
-            message.channel.send("Because Chicken wanted it to be like this !");
+            message.channel.send("Coz Chicken wanted it to be like this !");
         }
         else if(number === 2)
         {
