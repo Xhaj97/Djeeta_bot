@@ -31,6 +31,7 @@ const roleslist =
 const emolist =
     '__**List of emojis:**__'+
     '\n'+
+    '\n **regular:**'+
     '\ncool, salt, bow,'+
     '\nawesome, amazing, cry, claris,'+
     '\neh, help, ok, woo, lewd'+
@@ -45,6 +46,11 @@ const emolist =
     '\n lecia, erucry, orotea '+
     '\n eyy, pholieh, smug'+  
     '\n zoi, zoi2, smug2'+
+    '\n culture, cagj, jslack'+
+    '\n saddj, sadl, thx'+
+    '\n'+
+    '\n **gif:**'+
+    '\n jk, niopeek, urg'+
     '\n'+
     '\nFeel free to pm <@!159687457049280512> for more emojis.';
 
@@ -131,6 +137,60 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/chomp.png"
+            });
+        }
+        else if (str.includes("cagj"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/cagj.png"
+            });
+        }
+        else if (str.includes("jk"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/jk.gif"
+            });
+        }
+        else if (str.includes("nade"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/nade.gif"
+            });
+        }
+        else if (str.includes("jslack"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/jslack.png"
+            });
+        }
+        else if (str.includes("niopeek"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/niopeek.gif"
+            });
+        }
+        else if (str.includes("saddj"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/saddj.png"
+            });
+        }
+        else if (str.includes("sadl"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/sadl.png"
+            });
+        }
+        else if (str.includes("thx"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/thx.png"
+            });
+        }
+        else if (str.includes("urg"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/urg.gif"
             });
         }
         else if (str.includes("smug2"))
