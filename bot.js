@@ -51,6 +51,7 @@ const emolist =
     '\n'+
     '\n **gif:**'+
     '\n jk, niopeek, urg'+
+    '\n nade'+
     '\n'+
     '\nFeel free to pm <@!159687457049280512> for more emojis.';
 
@@ -142,7 +143,7 @@ bot.on('message', message => {
         else if (str.includes("cagj"))
         {
             message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/cagj.png"
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/CagJ.png"
             });
         }
         else if (str.includes("jk"))
