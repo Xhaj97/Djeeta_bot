@@ -1,5 +1,5 @@
 // VARIABLES
-const Discord =  require('discord.js');
+const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 // VARIABLES
@@ -22,11 +22,11 @@ const roleslist =
     '\n'+
     '\n**Elements**: *fire, water, earth, wind, dark, light*'+  
     '\n**Magna2**: *shiva, europa, grimnir, alexiel, metatron, avatar*'+
-    '\n**Special**: *go, ubahahl, malice, akasha, lucilius*'+
+    '\n**Special**: *go, ubahahl, malice, akasha, lucilius, bahaHL, huanglin*'+
     '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
     '\n'+
     '\n Want more roles ? PM the Officers or directly <@!159687457049280512>' +
-    '\n ⚠ Roles are case sensitive ! Also, **degenerate** role cannot be removed if added. ⚠';
+    '\n ⚠ Roles are case **sensitive** ! Also, **degenerate** role cannot be removed if added. ⚠';
 
 const emolist =
     '__**List of emojis:**__'+
@@ -638,6 +638,17 @@ bot.on('message', message => {
                 message.channel.send("Akasha role has been added");
             }
         }
+        else if(str.includes("bahaHL"))
+        {
+            if(message.member.roles.has('571669323513593856')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('571669323513593856')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Bahamut HL role has been added");
+            }
+        }
         else if(str.includes("ubahahl"))
         {
             if(message.member.roles.has('451763227341094913')) {
@@ -683,6 +694,17 @@ bot.on('message', message => {
                     .then(console.log)
                     .catch(console.error);
                 message.channel.send("Lucilius role has been added.");
+            }
+        }
+        else if(str.includes("huanglin"))
+        {
+            if(message.member.roles.has('571669068009046016')) {
+                message.channel.send("Y-you already have this role! B-baka!");
+            } else {
+                message.member.addRole('571669068009046016')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Huanglong & Qilin role has been added.");
             }
         }
         else
@@ -826,6 +848,17 @@ bot.on('message', message => {
                 message.channel.send("Avatar role has been removed.");
             }
         }
+        else if(str.includes("bahaHL"))
+        {
+            if(!message.member.roles.has('571669323513593856')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('571669323513593856')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Bahamut HL role has been removed.");
+            }
+        }
         else if(str.includes("ubahahl"))
         {
             if(!message.member.roles.has('451763227341094913')) {
@@ -879,6 +912,17 @@ bot.on('message', message => {
                     .then(console.log)
                     .catch(console.error);
                 message.channel.send("Lucilius role has been removed.");
+            }
+        }
+        else if(str.includes("huanglin"))
+        {
+            if(!message.member.roles.has('571669068009046016')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('571669068009046016')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Huanglong & Qilin role has been removed.");
             }
         }
         else
