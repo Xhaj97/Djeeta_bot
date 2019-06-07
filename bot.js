@@ -26,7 +26,7 @@ const roleslist =
     '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
     '\n'+
     '\n Want more roles ? PM the Officers or directly <@!159687457049280512>' +
-    '\n ⚠ Roles are case **sensitive** ! Also, **degenerate** role cannot be removed if added. ⚠';
+    '\n ⚠ **Roles are case sensitive** ! Also, **degenerate** role cannot be removed if added. ⚠';
 
 const emolist =
     '__**List of emojis:**__'+
