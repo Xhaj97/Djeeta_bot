@@ -110,7 +110,10 @@ bot.on('message', message => {
     // see roles list
     else if(str.startsWith("!emolist"))
     {
-        message.channel.send(emolist);
+        // message.channel.send(emolist);
+        message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/emolist.png"
+            });
     }
 
     // emojis
@@ -132,6 +135,48 @@ bot.on('message', message => {
         {
             message.channel.send(" ", {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/bored.png"
+            });
+        }
+        else if (str.includes("doggo"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/doggo.png"
+            });
+        }
+        else if (str.includes("goodwork"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/goodwork.jpg"
+            });
+        }
+        else if (str.includes("goodshit"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/goodshit.jpg"
+            });
+        }
+        else if (str.includes("medugood"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/medugood.png"
+            });
+        }
+        else if (str.includes("praise"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/praise.jpg"
+            });
+        }
+        else if (str.includes("squat"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/squat.jpg"
+            });
+        }
+        else if (str.includes("yggy"))
+        {
+            message.channel.send(" ", {
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/yggy.gif"
             });
         }
         else if (str.includes("chomp"))
@@ -1143,6 +1188,19 @@ bot.on('message', message => {
             message.channel.send("Got it.");
         }
         
+    }
+    
+    //blacklisting words
+    else if (str.includes("nigg") || str.includes("nigga") || str.includes("nigger") ) 
+    {
+        message.delete(1500);
+        let number = Math.floor(Math.random() * 5);
+        let temp = message.content;
+
+        if(number%2 ===  0)
+        {
+            message.channel.send("Y-You Dare to say the word again. <:kokogun:553650602610262046>");
+        }     
     }
 });
 
