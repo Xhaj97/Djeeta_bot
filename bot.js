@@ -117,7 +117,7 @@ bot.on('message', message => {
     }
     
     //blacklisting words
-    else if (str.includes("nigg") || str.includes("nigga") || str.includes("nigger") ) 
+    else if (str.includes("nigg") || str.includes("nigga") || str.includes("nigger") || str.includes("nibba") ) 
     {
         message.delete(1500);
         let number = Math.floor(Math.random() * 5);
