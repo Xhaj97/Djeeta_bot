@@ -115,6 +115,19 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/emolist.png"
             });
     }
+    
+    //blacklisting words
+    else if (str.includes("nigg") || str.includes("nigga") || str.includes("nigger") ) 
+    {
+        message.delete(1500);
+        let number = Math.floor(Math.random() * 5);
+        let temp = message.content;
+
+        if(number%2 ===  0)
+        {
+            message.channel.send("Y-You Dare to say the word again. <:kokogun:553650602610262046>");
+        }     
+    }
 
     // emojis
     else if (str.startsWith("!emo") && !message.member.roles.has('276934342708690967'))
@@ -1189,19 +1202,7 @@ bot.on('message', message => {
         }
         
     }
-    
-    //blacklisting words
-    else if (str.includes("nigg") || str.includes("nigga") || str.includes("nigger") ) 
-    {
-        message.delete(1500);
-        let number = Math.floor(Math.random() * 5);
-        let temp = message.content;
-
-        if(number%2 ===  0)
-        {
-            message.channel.send("Y-You Dare to say the word again. <:kokogun:553650602610262046>");
-        }     
-    }
+   
 });
 
 bot.login(process.env.BOT_TOKEN);
