@@ -15,7 +15,7 @@ const help =
     '\n!emo ---' +
     '\n!choose choice1 or choice2'+
     '\n'+
-    "\nThe bot answers your do you/ don't you /how /why questions !";
+    "\n~~The bot answers your do you/ don't you /how /why questions !~~ removed";
 
 const roleslist =
     '__**List of roles:**__'+
@@ -26,7 +26,7 @@ const roleslist =
     '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
     '\n'+
     '\n Want more roles ? PM the Officers or directly <@!159687457049280512>' +
-    '\n ⚠ **Roles are case sensitive** ! Also, **degenerate** role cannot be removed if added. ⚠';
+    '\n ⚠ **degenerate** role cannot be removed if added. ⚠';
 
 const emolist =
     '__**List of emojis:**__'+
@@ -699,17 +699,6 @@ bot.on('message', message => {
                 message.channel.send("Akasha role has been added");
             }
         }
-        else if(str.includes("bahaHL"))
-        {
-            if(message.member.roles.has('571669323513593856')) {
-                message.channel.send("Y-you already have this role!");
-            } else {
-                message.member.addRole('571669323513593856')
-                    .then(console.log)
-                    .catch(console.error);
-                message.channel.send("Bahamut HL role has been added");
-            }
-        }
         else if(str.includes("ubahahl"))
         {
             if(message.member.roles.has('451763227341094913')) {
@@ -721,7 +710,17 @@ bot.on('message', message => {
                 message.channel.send("UbahaHL role has been added. You have now access to ubahahl room.");
             }
         }
-
+        else if(str.includes("bahahl"))
+        {
+            if(message.member.roles.has('571669323513593856')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('571669323513593856')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Bahamut HL role has been added");
+            }
+        }
         else if(str.includes("go"))
         {
             if(message.member.roles.has('451763323046854666')) {
@@ -909,17 +908,6 @@ bot.on('message', message => {
                 message.channel.send("Avatar role has been removed.");
             }
         }
-        else if(str.includes("bahaHL"))
-        {
-            if(!message.member.roles.has('571669323513593856')) {
-                message.channel.send("You don't have this role.");
-            } else {
-                message.member.removeRole('571669323513593856')
-                    .then(console.log)
-                    .catch(console.error);
-                message.channel.send("Bahamut HL role has been removed.");
-            }
-        }
         else if(str.includes("ubahahl"))
         {
             if(!message.member.roles.has('451763227341094913')) {
@@ -929,6 +917,17 @@ bot.on('message', message => {
                     .then(console.log)
                     .catch(console.error);
                 message.channel.send("UbahaHL role has been removed.");
+            }
+        }
+        else if(str.includes("bahahl"))
+        {
+            if(!message.member.roles.has('571669323513593856')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('571669323513593856')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Bahamut HL role has been removed.");
             }
         }
         else if(str.includes("go"))
