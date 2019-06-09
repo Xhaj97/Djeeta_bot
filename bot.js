@@ -84,7 +84,10 @@ bot.on('guildMemberRemove', member => {
 bot.on('message', message => {
 
     // Get string of input
-    let str = message.content;
+    let str = message.content.toLowerCase();
+    let str0 = message.content.replace(/([^a-z!]+)/gim, '').toLowerCase();
+    str0 = str0.replace('L', 'i');
+    str0 = str0.replace('l', 'i');
 
     // if it's help
     if (str === '!helpme') {
@@ -117,7 +120,7 @@ bot.on('message', message => {
     }
     
     //blacklisting words
-    else if (str.includes("nigg") || str.includes("nigga") || str.includes("nigger") || str.includes("nibba") ) 
+    else if (str0.includes("nigg") || str0.includes("nibb") || str0.includes("niba") || str0.includes("niger")) 
     {
         message.delete(1500);
         let number = Math.floor(Math.random() * 5);
@@ -990,165 +993,165 @@ bot.on('message', message => {
     }
 
     //Djeeta answers you
-    else if(str.includes("Chicken") === true && str.includes("love you") === true && !message.member.roles.has('276934342708690967'))
-    {
-        let number = Math.floor(Math.random() * 5);
-        if(number ===  0)
-        {
-            message.channel.send("Chicken loves you too !");
-        }
-        else if(number ===  1)
-        {
-            message.channel.send("Huum ?");
-        }
-        else if(number ===  2)
-        {
-            message.channel.send("Chicken only like chicken.");
-        }
-        else
-        {
-            message.channel.send("Chicken can be friend with you.");
-        }
-    }
+//     else if(str.includes("Chicken") === true && str.includes("love you") === true && !message.member.roles.has('276934342708690967'))
+//     {
+//         let number = Math.floor(Math.random() * 5);
+//         if(number ===  0)
+//         {
+//             message.channel.send("Chicken loves you too !");
+//         }
+//         else if(number ===  1)
+//         {
+//             message.channel.send("Huum ?");
+//         }
+//         else if(number ===  2)
+//         {
+//             message.channel.send("Chicken only like chicken.");
+//         }
+//         else
+//         {
+//             message.channel.send("Chicken can be friend with you.");
+//         }
+//     }
 
-    else if(str.startsWith("Chicken") === true && str.includes("!") === true && !message.member.roles.has('276934342708690967'))
-    {
-        let number = Math.floor(Math.random() * 4);
-        if (number === 0)
-        {
-            message.channel.send("Hum ?");
-        }
-        else if(number === 1)
-        {
-            message.channel.send("Not now i'm trying to play gbf...");
-        }
-        else if(number === 2)
-        {
-            message.channel.send("Did you just call me ?");
-        }
-        else if(number === 3)
-        {
-            message.channel.send("Hi, what's up ?");
-        }
-    }
+//     else if(str.startsWith("Chicken") === true && str.includes("!") === true && !message.member.roles.has('276934342708690967'))
+//     {
+//         let number = Math.floor(Math.random() * 4);
+//         if (number === 0)
+//         {
+//             message.channel.send("Hum ?");
+//         }
+//         else if(number === 1)
+//         {
+//             message.channel.send("Not now i'm trying to play gbf...");
+//         }
+//         else if(number === 2)
+//         {
+//             message.channel.send("Did you just call me ?");
+//         }
+//         else if(number === 3)
+//         {
+//             message.channel.send("Hi, what's up ?");
+//         }
+//     }
     
-    else if(str.includes("Chicken") === true && str.includes("what do") === true && !message.member.roles.has('276934342708690967'))
-    {
-        let number = Math.floor(Math.random() * 5);
-        if (number === 0)
-        {
-            message.channel.send("Humm...Not telling you.");
-        }
-        else if(number === 1)
-        {
-            message.channel.send("I want to eat chicken o_o.");
-        }
-        else if(number === 4)
-        {
-            message.channel.send("Give me something to eat first.");
-        }
-        else if(number === 2)
-        {
-            message.channel.send("Chicken don't know the answer.");
-        }
-        else if(number === 3)
-        {
-            message.channel.send("Zzzzz");
+//     else if(str.includes("Chicken") === true && str.includes("what do") === true && !message.member.roles.has('276934342708690967'))
+//     {
+//         let number = Math.floor(Math.random() * 5);
+//         if (number === 0)
+//         {
+//             message.channel.send("Humm...Not telling you.");
+//         }
+//         else if(number === 1)
+//         {
+//             message.channel.send("I want to eat chicken o_o.");
+//         }
+//         else if(number === 4)
+//         {
+//             message.channel.send("Give me something to eat first.");
+//         }
+//         else if(number === 2)
+//         {
+//             message.channel.send("Chicken don't know the answer.");
+//         }
+//         else if(number === 3)
+//         {
+//             message.channel.send("Zzzzz");
 
-        }
-    }
+//         }
+//     }
 
-    // Do you question
-    else if(str.includes("Chicken") === true && str.includes("do you") === true && !message.member.roles.has('276934342708690967'))
-    {
-        let number = Math.floor(Math.random() * 4);
-        if (number === 0)
-        {
-            message.channel.send("Yes i do !");
-        }
-        else if(number === 1)
-        {
-            message.channel.send("No i don't.");
-        }
-        else if(number === 2)
-        {
-            message.channel.send("Hum. Chicken don't know the answer.");
-        }
-        else if(number === 3)
-        {
-            message.channel.send("Zzzzz");
+//     // Do you question
+//     else if(str.includes("Chicken") === true && str.includes("do you") === true && !message.member.roles.has('276934342708690967'))
+//     {
+//         let number = Math.floor(Math.random() * 4);
+//         if (number === 0)
+//         {
+//             message.channel.send("Yes i do !");
+//         }
+//         else if(number === 1)
+//         {
+//             message.channel.send("No i don't.");
+//         }
+//         else if(number === 2)
+//         {
+//             message.channel.send("Hum. Chicken don't know the answer.");
+//         }
+//         else if(number === 3)
+//         {
+//             message.channel.send("Zzzzz");
 
-        }
-    }
+//         }
+//     }
 
-    //don't you question
-    else if(str.includes("Chicken") === true && str.includes("don't you") === true && !message.member.roles.has('276934342708690967'))
-    {
-        let number = Math.floor(Math.random() * 4);
-        if (number === 0)
-        {
-            message.channel.send("Yes i do !");
-        }
-        else if(number === 1)
-        {
-            message.channel.send("No i don't.");
-        }
-        else if(number === 2)
-        {
-            message.channel.send("Hum i'm not sure how to answer sorry !");
-        }
-        else if(number === 3)
-        {
-            message.channel.send("Zzzzz");
+//     //don't you question
+//     else if(str.includes("Chicken") === true && str.includes("don't you") === true && !message.member.roles.has('276934342708690967'))
+//     {
+//         let number = Math.floor(Math.random() * 4);
+//         if (number === 0)
+//         {
+//             message.channel.send("Yes i do !");
+//         }
+//         else if(number === 1)
+//         {
+//             message.channel.send("No i don't.");
+//         }
+//         else if(number === 2)
+//         {
+//             message.channel.send("Hum i'm not sure how to answer sorry !");
+//         }
+//         else if(number === 3)
+//         {
+//             message.channel.send("Zzzzz");
 
-        }
-    }
+//         }
+//     }
 
-    // Why question
-    else if(str.includes("Chicken") === true && !message.member.roles.has('276934342708690967') && (str.includes("why") === true || str.includes("Why") === true) )
-    {
-        let number = Math.floor(Math.random() * 4);
-        if (number === 0)
-        {
-            message.channel.send("Hum i don't know...");
-        }
-        else if(number === 1)
-        {
-            message.channel.send("Coz Chicken wanted it to be like this !");
-        }
-        else if(number === 2)
-        {
-            message.channel.send("That's a good question ! Let me sleep now.");
-        }
-        else if(number === 3)
-        {
-            message.channel.send("I am hungry ! I want to watch TV");
-        }
-    }
+//     // Why question
+//     else if(str.includes("Chicken") === true && !message.member.roles.has('276934342708690967') && (str.includes("why") === true || str.includes("Why") === true) )
+//     {
+//         let number = Math.floor(Math.random() * 4);
+//         if (number === 0)
+//         {
+//             message.channel.send("Hum i don't know...");
+//         }
+//         else if(number === 1)
+//         {
+//             message.channel.send("Coz Chicken wanted it to be like this !");
+//         }
+//         else if(number === 2)
+//         {
+//             message.channel.send("That's a good question ! Let me sleep now.");
+//         }
+//         else if(number === 3)
+//         {
+//             message.channel.send("I am hungry ! I want to watch TV");
+//         }
+//     }
     
-    // Are you question
-    else if (str.includes("Chicken") === true && !message.member.roles.has('276934342708690967') && (str.includes("are you") === true || str.includes("Are you") === true)) 
-    {
-        let number = Math.floor(Math.random() * 5);
+//     // Are you question
+//     else if (str.includes("Chicken") === true && !message.member.roles.has('276934342708690967') && (str.includes("are you") === true || str.includes("Are you") === true)) 
+//     {
+//         let number = Math.floor(Math.random() * 5);
         
-        if(number%2 === 0)
-        {
-            message.channel.send("Chicks !");
-        }
+//         if(number%2 === 0)
+//         {
+//             message.channel.send("Chicks !");
+//         }
         
-        else if(number%2 === 1)
-        {
-            message.channel.send("I am too lazy to answer.");
-        }
-        else if(number%2 === 2)
-        {
-            message.channel.send("Chicks! ");
-        }
-        else if(number%2 === 3)
-        {
-            message.channel.send("Not listening ! ");
-        }
-    }
+//         else if(number%2 === 1)
+//         {
+//             message.channel.send("I am too lazy to answer.");
+//         }
+//         else if(number%2 === 2)
+//         {
+//             message.channel.send("Chicks! ");
+//         }
+//         else if(number%2 === 3)
+//         {
+//             message.channel.send("Not listening ! ");
+//         }
+//     }
 
     //If it's to make a choice
     else if (str.includes("!choose") && !message.member.roles.has('276934342708690967')) {
@@ -1170,23 +1173,23 @@ bot.on('message', message => {
             message.channel.send(temp);
         }
     }
-    else if (!message.member.roles.has('276934342708690967') && (str.includes("carry") || str.includes("Carry"))){
-        let number = Math.floor(Math.random() * 3);
-        if (str.includes("need") || str.includes("Need")){
-            if(number ===  0)
-            {
-                message.channel.send("I can carry if you want.");
-            }
-            else if(number ===  1)
-            {
-                message.channel.send("You called for carry ? -_-");
-            }
-            else
-            {
-                message.channel.send("Carry me! ");
-            }
-        }
-    }
+//     else if (!message.member.roles.has('276934342708690967') && (str.includes("carry") || str.includes("Carry"))){
+//         let number = Math.floor(Math.random() * 3);
+//         if (str.includes("need") || str.includes("Need")){
+//             if(number ===  0)
+//             {
+//                 message.channel.send("I can carry if you want.");
+//             }
+//             else if(number ===  1)
+//             {
+//                 message.channel.send("You called for carry ? -_-");
+//             }
+//             else
+//             {
+//                 message.channel.send("Carry me! ");
+//             }
+//         }
+//     }
     else if (str.includes("arrest this man") && !message.member.roles.has('276934342708690967') || str.includes("arrest this dude") ) 
     {
         let number = Math.floor(Math.random() * 5);
