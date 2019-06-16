@@ -162,7 +162,7 @@ bot.on('message', message => {
         else if (str.includes("goodwork"))
         {
             message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/goodwork.jpg"
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/goodwork.png"
             });
         }
         else if (str.includes("goodshit"))
@@ -186,7 +186,7 @@ bot.on('message', message => {
         else if (str.includes("squat"))
         {
             message.channel.send(" ", {
-                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/squat.jpg"
+                file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/squat.png"
             });
         }
         else if (str.includes("yggy"))
