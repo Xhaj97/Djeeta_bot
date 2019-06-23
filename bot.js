@@ -7,7 +7,7 @@ const help =
     '__**Commands list:**__' +
     '\n' +
     '\n!helpme'+
-    '\n!avatar <mention somebody>' +
+    '\n!avatar <ping somebody> or <get his id>' +
     '\n!rolelist' +
     '\n!addrole ---' +
     '\n!removerole ---' +
@@ -22,7 +22,7 @@ const roleslist =
     '\n'+
     '\n**Elements**: *fire, water, earth, wind, dark, light*'+  
     '\n**Magna2**: *shiva, europa, grimnir, alexiel, metatron, avatar*'+
-    '\n**Special**: *go, ubahahl, malice, akasha, lucilius, bahaHL, huanglin*'+
+    '\n**Special**: *go, ubahahl, malice, akasha, lucilius, luciliushard bahaHL, huanglin*'+
     '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
     '\n'+
     '\n Want more roles ? PM the Officers or directly <@!159687457049280512>' +
@@ -756,6 +756,17 @@ bot.on('message', message => {
                 message.channel.send("Lucilius role has been added.");
             }
         }
+		else if(str.includes("luciliushard"))
+        {
+            if(message.member.roles.has('592390712344182785')) {
+                message.channel.send("Y-you already have this role! B-baka!");
+            } else {
+                message.member.addRole('592390712344182785')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("LuciliusHard role has been added.");
+            }
+        }
         else if(str.includes("huanglin"))
         {
             if(message.member.roles.has('571669068009046016')) {
@@ -972,6 +983,17 @@ bot.on('message', message => {
                     .then(console.log)
                     .catch(console.error);
                 message.channel.send("Lucilius role has been removed.");
+            }
+        }
+		else if(str.includes("luciliushard"))
+        {
+            if(!message.member.roles.has('592390712344182785')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('592390712344182785')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("LuciliusHard role has been removed.");
             }
         }
         else if(str.includes("huanglin"))
