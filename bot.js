@@ -744,18 +744,6 @@ bot.on('message', message => {
                 message.channel.send("Degenerate role has been added. You cannot remove this role.");
             }
         }
-        
-        else if(str.includes("lucilius"))
-        {
-            if(message.member.roles.has('567229397938077696')) {
-                message.channel.send("Y-you already have this role! B-baka!");
-            } else {
-                message.member.addRole('567229397938077696')
-                    .then(console.log)
-                    .catch(console.error);
-                message.channel.send("Lucilius role has been added.");
-            }
-        }
 		else if(str.includes("luciliushard"))
         {
             if(message.member.roles.has('592390712344182785')) {
@@ -765,6 +753,17 @@ bot.on('message', message => {
                     .then(console.log)
                     .catch(console.error);
                 message.channel.send("LuciliusHard role has been added.");
+            }
+        }
+        else if(str.includes("lucilius"))
+        {
+            if(message.member.roles.has('567229397938077696')) {
+                message.channel.send("Y-you already have this role! B-baka!");
+            } else {
+                message.member.addRole('567229397938077696')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Lucilius role has been added.");
             }
         }
         else if(str.includes("huanglin"))
@@ -974,17 +973,6 @@ bot.on('message', message => {
                 message.channel.send("Malice role has been removed.");
             }
         }
-        else if(str.includes("lucilius"))
-        {
-            if(!message.member.roles.has('567229397938077696')) {
-                message.channel.send("You don't have this role.");
-            } else {
-                message.member.removeRole('567229397938077696')
-                    .then(console.log)
-                    .catch(console.error);
-                message.channel.send("Lucilius role has been removed.");
-            }
-        }
 		else if(str.includes("luciliushard"))
         {
             if(!message.member.roles.has('592390712344182785')) {
@@ -994,6 +982,17 @@ bot.on('message', message => {
                     .then(console.log)
                     .catch(console.error);
                 message.channel.send("LuciliusHard role has been removed.");
+            }
+        }
+        else if(str.includes("lucilius"))
+        {
+            if(!message.member.roles.has('567229397938077696')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('567229397938077696')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Lucilius role has been removed.");
             }
         }
         else if(str.includes("huanglin"))
