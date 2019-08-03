@@ -119,19 +119,6 @@ bot.on('message', message => {
             });
     }
     
-    //blacklisting words
-    else if (str0.includes("nigg") || str0.includes("nibb") || str0.includes("niba") || str0.includes("niger")) 
-    {
-        message.delete(1500);
-        let number = Math.floor(Math.random() * 5);
-        let temp = message.content;
-
-        if(number%2 ===  0)
-        {
-            message.channel.send("Y-You Dare to say the word again. <:kokogun:553650602610262046>");
-        }     
-    }
-
     // emojis
     else if (str.startsWith("!emo") && !message.member.roles.has('276934342708690967'))
     {
