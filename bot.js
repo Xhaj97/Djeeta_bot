@@ -764,6 +764,72 @@ bot.on('message', message => {
                 message.channel.send("Huanglong & Qilin role has been added.");
             }
         }
+		else if(str.includes("hectorhl"))
+        {
+            if(message.member.roles.has('609099460085022720')) {
+                message.channel.send("Y-you already have this role! B-baka!");
+            } else {
+                message.member.addRole('609099460085022720')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("HectorHL role has been added.");
+            }
+        }
+		else if(str.includes("anubishl"))
+        {
+            if(message.member.roles.has('609098856684060683')) {
+                message.channel.send("Y-you already have this role! B-baka!");
+            } else {
+                message.member.addRole('609098856684060683')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("AnubisHL role has been added.");
+            }
+        }
+		else if(str.includes("promhl"))
+        {
+            if(message.member.roles.has('609098930910658608')) {
+                message.channel.send("Y-you already have this role! B-baka!");
+            } else {
+                message.member.addRole('609098930910658608')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("PromHL role has been added.");
+            }
+        }
+		else if(str.includes("caonghl"))
+        {
+            if(message.member.roles.has('609099072489390149')) {
+                message.channel.send("Y-you already have this role! B-baka!");
+            } else {
+                message.member.addRole('609099072489390149')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("CaOngHL role has been added.");
+            }
+        }
+		else if(str.includes("gilgahl"))
+        {
+            if(message.member.roles.has('609099222658318336')) {
+                message.channel.send("Y-you already have this role! B-baka!");
+            } else {
+                message.member.addRole('609099222658318336')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("GilgaHL role has been added.");
+            }
+        }
+		else if(str.includes("morrihl"))
+        {
+            if(message.member.roles.has('609099328287408128')) {
+                message.channel.send("Y-you already have this role! B-baka!");
+            } else {
+                message.member.addRole('609099328287408128')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("MorriHL role has been added.");
+            }
+        }
         else
         {
             message.channel.send("This role does not exist. Please see !rolelist.");
@@ -991,6 +1057,72 @@ bot.on('message', message => {
                     .then(console.log)
                     .catch(console.error);
                 message.channel.send("Huanglong & Qilin role has been removed.");
+            }
+        }
+		else if(str.includes("hectorhl"))
+        {
+            if(!message.member.roles.has('609099460085022720')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('609099460085022720')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("HectorHL role has been removed.");
+            }
+        }
+		else if(str.includes("anubishl"))
+        {
+            if(!message.member.roles.has('609098856684060683')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('609098856684060683')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("AnubisHL role has been removed.");
+            }
+        }
+		else if(str.includes("promhl"))
+        {
+            if(!message.member.roles.has('609098930910658608')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('609098930910658608')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("PromHL role has been removed.");
+            }
+        }
+		else if(str.includes("caonghl"))
+        {
+            if(!message.member.roles.has('609099072489390149')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('609099072489390149')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("CaOngHL role has been removed.");
+            }
+        }
+		else if(str.includes("gilgahl"))
+        {
+            if(!message.member.roles.has('609099222658318336')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('609099222658318336')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("GilgaHL role has been removed.");
+            }
+        }
+		else if(str.includes("morrihl"))
+        {
+            if(!message.member.roles.has('609099328287408128')) {
+                message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('609099328287408128')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("MorriHL role has been removed.");
             }
         }
         else
