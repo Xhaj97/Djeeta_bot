@@ -22,8 +22,9 @@ const roleslist =
     '\n'+
     '\n**Elements**: *fire, water, earth, wind, dark, light*'+  
     '\n**Magna2**: *shiva, europa, grimnir, alexiel, metatron, avatar*'+
+	'\n**Buncles**: *HectorHL, AnubisHL, PromHL, CaOngHL, GilgaHL, MorriHL*'+
     '\n**Special**: *go, ubahahl, malice, akasha, lucilius, luciliushard bahaHL, huanglin*'+
-    '\n**Weird stuff**: *degenerate* tag for ppl interested in trap, futa...'+
+    '\n**Weird stuff**: *degenerate*'+
     '\n'+
     '\n Want more roles ? PM the Officers or directly <@!159687457049280512>' +
     '\n ⚠ **degenerate** role cannot be removed if added. ⚠';
