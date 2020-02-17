@@ -1140,10 +1140,20 @@ bot.on('message', message => {
 	
 	else if(str.includes("chicken") === true && str.includes("love you") === true && !message.member.roles.has('276934342708690967'))
      {
+		 // <@&678941651795836958>
          let number = Math.floor(Math.random() * 6);
          if(number ===  0)
          {
              message.channel.send("Chicken loves you too !");
+			 
+			 if(!message.member.roles.has('678941651795836958')) {
+                // message.channel.send("You don't have this role.");
+            } else {
+                message.member.removeRole('678941651795836958')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("You are not in the friendzone anymore ! Now's your chance !");
+            }
          }
          else if(number ===  1)
          {
@@ -1160,6 +1170,15 @@ bot.on('message', message => {
          else
          {
              message.channel.send("Chicken can be friend with you.");
+			 
+			 if(message.member.roles.has('678941651795836958')) {
+                // message.channel.send("Y-you already have this role! B-baka!");
+            } else {
+                message.member.addRole('678941651795836958')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Chicken gave you a special role ! check it out !");
+            }
          }
      }
 
