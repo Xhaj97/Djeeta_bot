@@ -1137,28 +1137,31 @@ bot.on('message', message => {
             message.channel.send("This role does not exist. Please see !rolelist.");
         }
     }
-
-    //Djeeta answers you
-//     else if(str.includes("Chicken") === true && str.includes("love you") === true && !message.member.roles.has('276934342708690967'))
-//     {
-//         let number = Math.floor(Math.random() * 5);
-//         if(number ===  0)
-//         {
-//             message.channel.send("Chicken loves you too !");
-//         }
-//         else if(number ===  1)
-//         {
-//             message.channel.send("Huum ?");
-//         }
-//         else if(number ===  2)
-//         {
-//             message.channel.send("Chicken only like chicken.");
-//         }
-//         else
-//         {
-//             message.channel.send("Chicken can be friend with you.");
-//         }
-//     }
+	
+	else if(str.includes("chicken") === true && str.includes("love you") === true && !message.member.roles.has('276934342708690967'))
+     {
+         let number = Math.floor(Math.random() * 6);
+         if(number ===  0)
+         {
+             message.channel.send("Chicken loves you too !");
+         }
+         else if(number ===  1)
+         {
+             message.channel.send("Huum ?");
+         }
+         else if(number ===  2)
+         {
+             message.channel.send("Are you a chicken ? I only like chicken.");
+         }
+		 else if(number ===  3)
+         {
+             message.channel.send("Who are you again ?");
+         }
+         else
+         {
+             message.channel.send("Chicken can be friend with you.");
+         }
+     }
 
 //     else if(str.startsWith("Chicken") === true && str.includes("!") === true && !message.member.roles.has('276934342708690967'))
 //     {
