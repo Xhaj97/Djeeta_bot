@@ -15,7 +15,7 @@ const help =
     '\n!emo ---' +
     '\n!choose choice1 or choice2'+
     '\n'+
-    "\n~~The bot answers your do you/ don't you /how /why questions !~~ removed";
+    "\nThe bot answers you if you call her : 'Chicken !'";
 
 const roleslist =
     '__**List of roles:**__'+
@@ -1163,26 +1163,26 @@ bot.on('message', message => {
          }
      }
 
-//     else if(str.startsWith("Chicken") === true && str.includes("!") === true && !message.member.roles.has('276934342708690967'))
-//     {
-//         let number = Math.floor(Math.random() * 4);
-//         if (number === 0)
-//         {
-//             message.channel.send("Hum ?");
-//         }
-//         else if(number === 1)
-//         {
-//             message.channel.send("Not now i'm trying to play gbf...");
-//         }
-//         else if(number === 2)
-//         {
-//             message.channel.send("Did you just call me ?");
-//         }
-//         else if(number === 3)
-//         {
-//             message.channel.send("Hi, what's up ?");
-//         }
-//     }
+     else if(str.startsWith("chicken !") === true && !message.member.roles.has('276934342708690967'))
+     {
+         let number = Math.floor(Math.random() * 4);
+         if (number === 0)
+         {
+             message.channel.send("Hum ?");
+         }
+         else if(number === 1)
+         {
+             message.channel.send("Not now i'm trying to play gbf...");
+         }
+         else if(number === 2)
+         {
+             message.channel.send("Did you just call me ?");
+         }
+         else if(number === 3)
+         {
+             message.channel.send("'Sup chickens?");
+         }
+     }
     
 //     else if(str.includes("Chicken") === true && str.includes("what do") === true && !message.member.roles.has('276934342708690967'))
 //     {
