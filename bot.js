@@ -20,10 +20,11 @@ const help =
 const roleslist =
     '__**List of roles:**__'+
     '\n'+
-    '\n**Elements**: *fire, water, earth, wind, dark, light*'+  
+    '\n**Elements**: *fire, water, earth, wind, dark, light*'+
     '\n**Magna2**: *shiva, europa, grimnir, alexiel, metatron, avatar*'+
-	'\n**Buncles**: *HectorHL, AnubisHL, PromHL, CaOngHL, GilgaHL, MorriHL*'+
-    '\n**Special**: *go, ubahahl, malice, akasha, lucilius, luciliushard bahaHL, huanglin*'+
+	  '\n**Buncles**: *HectorHL, AnubisHL, PromHL, CaOngHL, GilgaHL, MorriHL*'+
+    '\n**Dragons**: *6dragontime, fediel, wamdus, galleon, ewiyar, lu woh, wilnas*'+
+    '\n**Others**: *go, ubahahl, malice, akasha, lucilius, luciliushard bahaHL, huanglin, bubz*'+
     '\n**Weird stuff**: *degenerate*'+
     '\n'+
     '\n Want more roles ? PM the Officers or directly <@!159687457049280512>' +
@@ -45,7 +46,7 @@ const emolist =
     '\nno, sadj, homete, altoxi'+
     '\n fight, xarp, gmorning, gnight'+
     '\n lecia, erucry, orotea '+
-    '\n eyy, pholieh, smug'+  
+    '\n eyy, pholieh, smug'+
     '\n zoi, zoi2, smug2'+
     '\n culture, cagj, jslack'+
     '\n saddj, sadl, thx'+
@@ -94,7 +95,7 @@ bot.on('message', message => {
     if (str === '!helpme') {
         message.channel.send(help);
     }
-    
+
     if (message.content.startsWith("!avatar")) {
         if (!message.mentions.users.size) {
             return message.channel.send(`Your avatar: ${message.author.displayAvatarURL}`);
@@ -119,7 +120,7 @@ bot.on('message', message => {
                 file: "https://raw.githubusercontent.com/Xhaj97/Djeeta_bot/master/img/emolist.png"
             });
     }
-    
+
     // emojis
     else if (str.startsWith("!emo") && !message.member.roles.has('276934342708690967'))
     {
@@ -1121,6 +1122,94 @@ bot.on('message', message => {
                 message.channel.send("GilgaHL role has been removed.");
             }
         }
+    else if(str.includes("6dragontime"))
+        {
+            if(message.member.roles.has('755381937828397168')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('755381937828397168')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("6 Dragon time! role has been added");
+            }
+        }
+    else if(str.includes("fediel"))
+        {
+            if(message.member.roles.has('711486614421110877')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('711486614421110877')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Fediel role has been added");
+            }
+        }
+    else if(str.includes("wamdus"))
+        {
+            if(message.member.roles.has('755381803879104512')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('755381803879104512')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Wamdus role has been added");
+            }
+        }
+    else if(str.includes("wilnas"))
+        {
+            if(message.member.roles.has('755381942387736597')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('755381942387736597')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Wilnas role has been added");
+            }
+        }
+    else if(str.includes("galleon"))
+        {
+            if(message.member.roles.has('760457936639098890')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('760457936639098890')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Galleon role has been added");
+            }
+        }
+    else if(str.includes("luwoh"))
+        {
+            if(message.member.roles.has('760457934525300737')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('760457934525300737')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Lu Woh role has been added");
+            }
+        }
+    else if(str.includes("ewiyar"))
+        {
+            if(message.member.roles.has('760457890011676712')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('760457890011676712')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Ewiyar role has been added");
+            }
+        }
+    else if(str.includes("bubz"))
+        {
+            if(message.member.roles.has('760458480582393877')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('760458480582393877')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("Bubz role has been added");
+            }
+        }
 		else if(str.includes("morrihl"))
         {
             if(!message.member.roles.has('609099328287408128')) {
@@ -1137,7 +1226,7 @@ bot.on('message', message => {
             message.channel.send("This role does not exist. Please see !rolelist.");
         }
     }
-	
+
 	else if(str.includes("chicken") === true && str.includes("love you") === true && !message.member.roles.has('276934342708690967'))
      {
 		 // <@&678941651795836958>
@@ -1145,7 +1234,7 @@ bot.on('message', message => {
          if(number ===  0)
          {
              message.channel.send("Chicken loves you too !");
-			 
+
 			 if(!message.member.roles.has('678941651795836958')) {
                 // message.channel.send("You don't have this role.");
             } else {
@@ -1170,7 +1259,7 @@ bot.on('message', message => {
          else
          {
              message.channel.send("Chicken can be friend with you.");
-			 
+
 			 if(message.member.roles.has('678941651795836958')) {
                 // message.channel.send("Y-you already have this role! B-baka!");
             } else {
@@ -1202,7 +1291,7 @@ bot.on('message', message => {
              message.channel.send("'Sup chickens?");
          }
      }
-    
+
 //     else if(str.includes("Chicken") === true && str.includes("what do") === true && !message.member.roles.has('276934342708690967'))
 //     {
 //         let number = Math.floor(Math.random() * 5);
@@ -1296,17 +1385,17 @@ bot.on('message', message => {
 //             message.channel.send("I am hungry ! I want to watch TV");
 //         }
 //     }
-    
+
 //     // Are you question
-//     else if (str.includes("Chicken") === true && !message.member.roles.has('276934342708690967') && (str.includes("are you") === true || str.includes("Are you") === true)) 
+//     else if (str.includes("Chicken") === true && !message.member.roles.has('276934342708690967') && (str.includes("are you") === true || str.includes("Are you") === true))
 //     {
 //         let number = Math.floor(Math.random() * 5);
-        
+
 //         if(number%2 === 0)
 //         {
 //             message.channel.send("Chicks !");
 //         }
-        
+
 //         else if(number%2 === 1)
 //         {
 //             message.channel.send("I am too lazy to answer.");
@@ -1358,7 +1447,7 @@ bot.on('message', message => {
 //             }
 //         }
 //     }
-    else if (str.includes("arrest this man") && !message.member.roles.has('276934342708690967') || str.includes("arrest this dude") ) 
+    else if (str.includes("arrest this man") && !message.member.roles.has('276934342708690967') || str.includes("arrest this dude") )
     {
         let number = Math.floor(Math.random() * 5);
         let temp = message.content;
@@ -1371,9 +1460,9 @@ bot.on('message', message => {
         {
             message.channel.send("Got it.");
         }
-        
+
     }
-   
+
 });
 
 bot.login(process.env.BOT_TOKEN);
