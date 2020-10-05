@@ -24,7 +24,7 @@ const roleslist =
     '\n**Magna2**: *shiva, europa, grimnir, alexiel, metatron, avatar*'+
 	  '\n**Buncles**: *HectorHL, AnubisHL, PromHL, CaOngHL, GilgaHL, MorriHL*'+
     '\n**Dragons**: *6dragontime, fediel, wamdus, galleon, ewiyar, lu woh, wilnas*'+
-    '\n**Others**: *go, ubahahl, malice, akasha, lucilius, luciliushard bahaHL, huanglin, bubz*'+
+    '\n**Others**: *grandorder, ubahahl, malice, akasha, lucilius, luciliushard bahaHL, huanglin, bubz*'+
     '\n**Weird stuff**: *degenerate*'+
     '\n'+
     '\n Want more roles ? PM the Officers or directly <@!159687457049280512>' +
@@ -716,7 +716,7 @@ bot.on('message', message => {
                 message.channel.send("Bahamut HL role has been added");
             }
         }
-        else if(str.includes("go"))
+        else if(str.includes("grandorder"))
         {
             if(message.member.roles.has('451763323046854666')) {
                 message.channel.send("Y-you already have this role!");
@@ -838,6 +838,94 @@ bot.on('message', message => {
                 message.channel.send("MorriHL role has been added.");
             }
         }
+		else if(str.includes("6dragontime"))
+        {
+            if(message.member.roles.has('755381937828397168')) {
+                message.channel.send("Y-you already have this role!");
+            } else {
+                message.member.addRole('755381937828397168')
+                    .then(console.log)
+                    .catch(console.error);
+                message.channel.send("6 Dragon time! role has been added");
+            }
+        }
+		else if(str.includes("fediel"))
+			{
+				if(message.member.roles.has('711486614421110877')) {
+					message.channel.send("Y-you already have this role!");
+				} else {
+					message.member.addRole('711486614421110877')
+						.then(console.log)
+						.catch(console.error);
+					message.channel.send("Fediel role has been added");
+				}
+			}
+		else if(str.includes("wamdus"))
+			{
+				if(message.member.roles.has('755381803879104512')) {
+					message.channel.send("Y-you already have this role!");
+				} else {
+					message.member.addRole('755381803879104512')
+						.then(console.log)
+						.catch(console.error);
+					message.channel.send("Wamdus role has been added");
+				}
+			}
+		else if(str.includes("wilnas"))
+			{
+				if(message.member.roles.has('755381942387736597')) {
+					message.channel.send("Y-you already have this role!");
+				} else {
+					message.member.addRole('755381942387736597')
+						.then(console.log)
+						.catch(console.error);
+					message.channel.send("Wilnas role has been added");
+				}
+			}
+		else if(str.includes("galleon"))
+			{
+				if(message.member.roles.has('760457936639098890')) {
+					message.channel.send("Y-you already have this role!");
+				} else {
+					message.member.addRole('760457936639098890')
+						.then(console.log)
+						.catch(console.error);
+					message.channel.send("Galleon role has been added");
+				}
+			}
+		else if(str.includes("luwoh"))
+			{
+				if(message.member.roles.has('760457934525300737')) {
+					message.channel.send("Y-you already have this role!");
+				} else {
+					message.member.addRole('760457934525300737')
+						.then(console.log)
+						.catch(console.error);
+					message.channel.send("Lu Woh role has been added");
+				}
+			}
+		else if(str.includes("ewiyar"))
+			{
+				if(message.member.roles.has('760457890011676712')) {
+					message.channel.send("Y-you already have this role!");
+				} else {
+					message.member.addRole('760457890011676712')
+						.then(console.log)
+						.catch(console.error);
+					message.channel.send("Ewiyar role has been added");
+				}
+			}
+		else if(str.includes("bubz"))
+			{
+				if(message.member.roles.has('760458480582393877')) {
+					message.channel.send("Y-you already have this role!");
+				} else {
+					message.member.addRole('760458480582393877')
+						.then(console.log)
+						.catch(console.error);
+					message.channel.send("Bubz role has been added");
+				}
+			}
         else
         {
             message.channel.send("This role does not exist. Please see !rolelist.");
@@ -1001,7 +1089,7 @@ bot.on('message', message => {
                 message.channel.send("Bahamut HL role has been removed.");
             }
         }
-        else if(str.includes("go"))
+        else if(str.includes("grandorder"))
         {
             if(!message.member.roles.has('451763323046854666')) {
                 message.channel.send("You don't have this role.");
@@ -1127,10 +1215,10 @@ bot.on('message', message => {
             if(message.member.roles.has('755381937828397168')) {
                 message.channel.send("Y-you already have this role!");
             } else {
-                message.member.addRole('755381937828397168')
+                message.member.removeRole('755381937828397168')
                     .then(console.log)
                     .catch(console.error);
-                message.channel.send("6 Dragon time! role has been added");
+                message.channel.send("6 Dragon time! role has been removed");
             }
         }
     else if(str.includes("fediel"))
@@ -1138,10 +1226,10 @@ bot.on('message', message => {
             if(message.member.roles.has('711486614421110877')) {
                 message.channel.send("Y-you already have this role!");
             } else {
-                message.member.addRole('711486614421110877')
+                message.member.removeRole('711486614421110877')
                     .then(console.log)
                     .catch(console.error);
-                message.channel.send("Fediel role has been added");
+                message.channel.send("Fediel role has been removed");
             }
         }
     else if(str.includes("wamdus"))
@@ -1149,10 +1237,10 @@ bot.on('message', message => {
             if(message.member.roles.has('755381803879104512')) {
                 message.channel.send("Y-you already have this role!");
             } else {
-                message.member.addRole('755381803879104512')
+                message.member.removeRole('755381803879104512')
                     .then(console.log)
                     .catch(console.error);
-                message.channel.send("Wamdus role has been added");
+                message.channel.send("Wamdus role has been removed");
             }
         }
     else if(str.includes("wilnas"))
@@ -1160,10 +1248,10 @@ bot.on('message', message => {
             if(message.member.roles.has('755381942387736597')) {
                 message.channel.send("Y-you already have this role!");
             } else {
-                message.member.addRole('755381942387736597')
+                message.member.removeRole('755381942387736597')
                     .then(console.log)
                     .catch(console.error);
-                message.channel.send("Wilnas role has been added");
+                message.channel.send("Wilnas role has been removed");
             }
         }
     else if(str.includes("galleon"))
@@ -1171,10 +1259,10 @@ bot.on('message', message => {
             if(message.member.roles.has('760457936639098890')) {
                 message.channel.send("Y-you already have this role!");
             } else {
-                message.member.addRole('760457936639098890')
+                message.member.removeRole('760457936639098890')
                     .then(console.log)
                     .catch(console.error);
-                message.channel.send("Galleon role has been added");
+                message.channel.send("Galleon role has been removed");
             }
         }
     else if(str.includes("luwoh"))
@@ -1182,10 +1270,10 @@ bot.on('message', message => {
             if(message.member.roles.has('760457934525300737')) {
                 message.channel.send("Y-you already have this role!");
             } else {
-                message.member.addRole('760457934525300737')
+                message.member.removeRole('760457934525300737')
                     .then(console.log)
                     .catch(console.error);
-                message.channel.send("Lu Woh role has been added");
+                message.channel.send("Lu Woh role has been removed");
             }
         }
     else if(str.includes("ewiyar"))
@@ -1193,10 +1281,10 @@ bot.on('message', message => {
             if(message.member.roles.has('760457890011676712')) {
                 message.channel.send("Y-you already have this role!");
             } else {
-                message.member.addRole('760457890011676712')
+                message.member.removeRole('760457890011676712')
                     .then(console.log)
                     .catch(console.error);
-                message.channel.send("Ewiyar role has been added");
+                message.channel.send("Ewiyar role has been removed");
             }
         }
     else if(str.includes("bubz"))
@@ -1204,10 +1292,10 @@ bot.on('message', message => {
             if(message.member.roles.has('760458480582393877')) {
                 message.channel.send("Y-you already have this role!");
             } else {
-                message.member.addRole('760458480582393877')
+                message.member.removeRole('760458480582393877')
                     .then(console.log)
                     .catch(console.error);
-                message.channel.send("Bubz role has been added");
+                message.channel.send("Bubz role has been removed");
             }
         }
 		else if(str.includes("morrihl"))
